@@ -1,0 +1,1511 @@
+[
+    {
+      "className": "flag US",
+      "tagClassName": "flag US",
+      "label": "U.S.",
+      "value": "US",
+      "checked": true
+    },
+    {
+      "className": "flag PH",
+      "tagClassName": "flag PH",
+      "label": "Philippines ",
+      "value": "PHI"
+    },
+    {
+      "className": "flag SE",
+      "tagClassName": "flag SE",
+      "label": "Sweden ",
+      "value": "SWE"
+    },
+    {
+      "className": "flag GB",
+      "tagClassName": "flag GB",
+      "label": "U.K.",
+      "value": "UK"
+    },
+    {
+      "className": "flag IN",
+      "tagClassName": "flag IN",
+      "label": "India ",
+      "value": "IND",
+      "checked": true
+    },
+    {
+      "className": "flag ZA",
+      "tagClassName": "flag ZA",
+      "label": "South Africa",
+      "value": "RSA"
+    },
+    {
+      "className": "flag CA",
+      "tagClassName": "flag CA",
+      "label": "Canada ",
+      "value": "CAN"
+    },
+    {
+      "className": "flag AE",
+      "tagClassName": "flag AE",
+      "label": "U.A.E.",
+      "value": "UAE"
+    },
+    {
+      "className": "flag IT",
+      "tagClassName": "flag IT",
+      "label": "Italy ",
+      "value": "ITA"
+    },
+    {
+      "className": "flag DK",
+      "tagClassName": "flag DK",
+      "label": "Denmark ",
+      "value": "DEN"
+    },
+    {
+      "className": "flag SG",
+      "tagClassName": "flag SG",
+      "label": "Singapore ",
+      "value": "SIN"
+    },
+    {
+      "className": "flag JP",
+      "tagClassName": "flag JP",
+      "label": "Japan ",
+      "value": "JPN"
+    },
+    {
+      "className": "flag FR",
+      "tagClassName": "flag FR",
+      "label": "France ",
+      "value": "FRA"
+    },
+    {
+      "className": "flag AR",
+      "tagClassName": "flag AR",
+      "label": "Argentina ",
+      "value": "ARG"
+    },
+    {
+      "className": "flag HU",
+      "tagClassName": "flag HU",
+      "label": "Hungary ",
+      "value": "HUN"
+    },
+    {
+      "className": "flag SK",
+      "tagClassName": "flag SK",
+      "label": "Slovakia ",
+      "value": "SVK"
+    },
+    {
+      "className": "flag FI",
+      "tagClassName": "flag FI",
+      "label": "Finland ",
+      "value": "FIN"
+    },
+    {
+      "className": "flag NO",
+      "tagClassName": "flag NO",
+      "label": "Norway ",
+      "value": "NOR"
+    },
+    {
+      "className": "flag RO",
+      "tagClassName": "flag RO",
+      "label": "Romania",
+      "value": "ROM"
+    },
+    {
+      "className": "flag ID",
+      "tagClassName": "flag ID",
+      "label": "Indonesia ",
+      "value": "INA"
+    },
+    {
+      "className": "flag KR",
+      "tagClassName": "flag KR",
+      "label": "South Korea",
+      "value": "SKA"
+    },
+    {
+      "className": "flag MX",
+      "tagClassName": "flag MX",
+      "label": "Mexico ",
+      "value": "MEX"
+    },
+    {
+      "className": "flag ES",
+      "tagClassName": "flag ES",
+      "label": "Spain ",
+      "value": "SPN"
+    },
+    {
+      "className": "flag CH",
+      "tagClassName": "flag CH",
+      "label": "Switzerland ",
+      "value": "SWI"
+    },
+    {
+      "className": "flag LK",
+      "tagClassName": "flag LK",
+      "label": "Sri Lanka ",
+      "value": "SRI"
+    },
+    {
+      "className": "flag CN",
+      "tagClassName": "flag CN",
+      "label": "China ",
+      "value": "CHN"
+    },
+    {
+      "className": "flag TR",
+      "tagClassName": "flag TR",
+      "label": "Turkey ",
+      "value": "TUR"
+    },
+    {
+      "className": "flag NL",
+      "tagClassName": "flag NL",
+      "label": "Netherlands ",
+      "value": "NED"
+    },
+    {
+      "className": "flag DE",
+      "tagClassName": "flag DE",
+      "label": "Germany ",
+      "value": "GER"
+    },
+    {
+      "className": "flag TH",
+      "tagClassName": "flag TH",
+      "label": "Thailand ",
+      "value": "THA"
+    },
+    {
+      "className": "flag LU",
+      "tagClassName": "flag LU",
+      "label": "Luxembourg ",
+      "value": "LUX"
+    },
+    {
+      "className": "flag CZ",
+      "tagClassName": "flag CZ",
+      "label": "Czech",
+      "value": "CZE"
+    },
+    {
+      "className": "flag RU",
+      "tagClassName": "flag RU",
+      "label": "Russia",
+      "value": "RUS"
+    },
+    {
+      "className": "flag BE",
+      "tagClassName": "flag BE",
+      "label": "Belgium",
+      "value": "BEL"
+    },
+    {
+      "className": "flag BG",
+      "tagClassName": "flag BG",
+      "label": "Bulgaria ",
+      "value": "BUL"
+    },
+    {
+      "className": "flag AU",
+      "tagClassName": "flag AU",
+      "label": "Australia ",
+      "value": "AUS"
+    },
+    {
+      "className": "flag SI",
+      "tagClassName": "flag SI",
+      "label": "Slovenia ",
+      "value": "SLO"
+    },
+    {
+      "className": "flag IL",
+      "tagClassName": "flag IL",
+      "label": "Israel ",
+      "value": "ISR"
+    },
+    {
+      "className": "flag ZW",
+      "tagClassName": "flag ZW",
+      "label": "Zimbabwe ",
+      "value": "ZIM"
+    },
+    {
+      "className": "flag PL",
+      "tagClassName": "flag PL",
+      "label": "Poland ",
+      "value": "POL"
+    },
+    {
+      "className": "flag TW",
+      "tagClassName": "flag TW",
+      "label": "Taiwan",
+      "value": "TAI"
+    },
+    {
+      "className": "flag HK",
+      "tagClassName": "flag HK",
+      "label": "Hong Kong",
+      "value": "HK"
+    },
+    {
+      "className": "flag MY",
+      "tagClassName": "flag MY",
+      "label": "Malaysia",
+      "value": "MAL"
+    },
+    {
+      "className": "flag BR",
+      "tagClassName": "flag BR",
+      "label": "Brazil ",
+      "value": "BRA"
+    },
+    {
+      "className": "flag EG",
+      "tagClassName": "flag EG",
+      "label": "Egypt ",
+      "value": "EGY"
+    },
+    {
+      "className": "flag GR",
+      "tagClassName": "flag GR",
+      "label": "Greece ",
+      "value": "GRE"
+    },
+    {
+      "className": "flag IE",
+      "tagClassName": "flag IE",
+      "label": "Ireland ",
+      "value": "IRL"
+    },
+    {
+      "className": "flag KE",
+      "tagClassName": "flag KE",
+      "label": "Kenya ",
+      "value": "KEN"
+    },
+    {
+      "className": "flag GE",
+      "tagClassName": "flag GE",
+      "label": "Georgia",
+      "value": "GE"
+    },
+    {
+      "className": "flag PT",
+      "tagClassName": "flag PT",
+      "label": "Portugal ",
+      "value": "POR"
+    },
+    {
+      "className": "flag EU",
+      "tagClassName": "flag EU",
+      "label": "E.U.",
+      "value": "EU"
+    },
+    {
+      "className": "flag PE",
+      "tagClassName": "flag PE",
+      "label": "Peru ",
+      "value": "PER"
+    },
+    {
+      "className": "flag NZ",
+      "tagClassName": "flag NZ",
+      "label": "New Zealand ",
+      "value": "NZ"
+    },
+    {
+      "className": "flag IS",
+      "tagClassName": "flag IS",
+      "label": "Iceland ",
+      "value": "ICE"
+    },
+    {
+      "className": "flag AT",
+      "tagClassName": "flag AT",
+      "label": "Austria ",
+      "value": "AUT"
+    },
+    {
+      "className": "flag IR",
+      "tagClassName": "flag IR",
+      "label": "Iran",
+      "value": "IRA"
+    },
+    {
+      "className": "flag KH",
+      "tagClassName": "flag KH",
+      "label": "Cambodia ",
+      "value": "CAM"
+    },
+    {
+      "className": "flag CL",
+      "tagClassName": "flag CL",
+      "label": "Chile ",
+      "value": "CHI"
+    },
+    {
+      "className": "flag SA",
+      "tagClassName": "flag SA",
+      "label": "Saudi Arabia",
+      "value": "SA"
+    },
+    {
+      "className": "flag GH",
+      "tagClassName": "flag GH",
+      "label": "Ghana",
+      "value": "GH"
+    },
+    {
+      "className": "flag BH",
+      "tagClassName": "flag BH",
+      "label": "Bahrain ",
+      "value": "BHA"
+    },
+    {
+      "className": "flag CO",
+      "tagClassName": "flag CO",
+      "label": "Colombia ",
+      "value": "COL"
+    },
+    {
+      "className": "flag KY",
+      "tagClassName": "flag KY",
+      "label": "Cayman Is",
+      "value": "CAY"
+    },
+    {
+      "className": "flag BD",
+      "tagClassName": "flag BD",
+      "label": "Bangladesh ",
+      "value": "BAN"
+    },
+    {
+      "className": "flag LT",
+      "tagClassName": "flag LT",
+      "label": "Lithuania ",
+      "value": "LIT"
+    },
+    {
+      "className": "flag JO",
+      "tagClassName": "flag JO",
+      "label": "Jordan",
+      "value": "JO"
+    },
+    {
+      "className": "flag VN",
+      "tagClassName": "flag VN",
+      "label": "Vietnam ",
+      "value": "VIE"
+    },
+    {
+      "className": "flag UA",
+      "tagClassName": "flag UA",
+      "label": "Ukraine ",
+      "value": "UKR"
+    },
+    {
+      "className": "flag KW",
+      "tagClassName": "flag KW",
+      "label": "Kuwait ",
+      "value": "KUW"
+    },
+    {
+      "className": "flag MA",
+      "tagClassName": "flag MA",
+      "label": "Morocco",
+      "value": "MA"
+    },
+    {
+      "className": "flag CY",
+      "tagClassName": "flag CY",
+      "label": "Cyprus ",
+      "value": "CYP"
+    },
+    {
+      "className": "flag SM",
+      "tagClassName": "flag SM",
+      "label": "San Marino",
+      "value": "SM"
+    },
+    {
+      "className": "flag NG",
+      "tagClassName": "flag NG",
+      "label": "Nigeria ",
+      "value": "NGR"
+    },
+    {
+      "className": "flag MC",
+      "tagClassName": "flag MC",
+      "label": "Monaco ",
+      "value": "MON"
+    },
+    {
+      "className": "flag GQ",
+      "tagClassName": "flag GQ",
+      "label": "E. Guinea",
+      "value": "EK"
+    },
+    {
+      "className": "flag HR",
+      "tagClassName": "flag HR",
+      "label": "Croatia",
+      "value": "CRO"
+    },
+    {
+      "className": "flag PK",
+      "tagClassName": "flag PK",
+      "label": "Pakistan ",
+      "value": "PAK"
+    },
+    {
+      "className": "flag EE",
+      "tagClassName": "flag EE",
+      "label": "Estonia ",
+      "value": "EST"
+    },
+    {
+      "className": "flag LV",
+      "tagClassName": "flag LV",
+      "label": "Latvia ",
+      "value": "LAT"
+    },
+    {
+      "className": "flag PA",
+      "tagClassName": "flag PA",
+      "label": "Panama ",
+      "value": "PAN"
+    },
+    {
+      "className": "flag FO",
+      "tagClassName": "flag FO",
+      "label": "Faroe Island",
+      "value": "FO"
+    },
+    {
+      "className": "flag AF",
+      "tagClassName": "flag AF",
+      "label": "Afghanistan",
+      "value": "AFG"
+    },
+    {
+      "className": "flag MT",
+      "tagClassName": "flag MT",
+      "label": "Malta ",
+      "value": "MLT"
+    },
+    {
+      "className": "flag QA",
+      "tagClassName": "flag QA",
+      "label": "Qatar ",
+      "value": "QAT"
+    },
+    {
+      "className": "flag UZ",
+      "tagClassName": "flag UZ",
+      "label": "Uzbekistan",
+      "value": "UZ"
+    },
+    {
+      "className": "flag NP",
+      "tagClassName": "flag NP",
+      "label": "Nepal ",
+      "value": "NEP"
+    },
+    {
+      "className": "flag EC",
+      "tagClassName": "flag EC",
+      "label": "Ecuador ",
+      "value": "ECU"
+    },
+    {
+      "className": "flag IM",
+      "tagClassName": "flag IM",
+      "label": "Isle Of Man",
+      "value": "IM"
+    },
+    {
+      "className": "flag PG",
+      "tagClassName": "flag PG",
+      "label": "Pap Guinea",
+      "value": "PNG"
+    },
+    {
+      "className": "flag BN",
+      "tagClassName": "flag BN",
+      "label": "Brunei",
+      "value": "BX"
+    },
+    {
+      "className": "flag CI",
+      "tagClassName": "flag CI",
+      "label": "Ivory Coast",
+      "value": "CI"
+    },
+    {
+      "className": "flag TN",
+      "tagClassName": "flag TN",
+      "label": "Tunisia ",
+      "value": "TUN"
+    },
+    {
+      "className": "flag VE",
+      "tagClassName": "flag VE",
+      "label": "Venezuela ",
+      "value": "VEN"
+    },
+    {
+      "className": "flag BA",
+      "tagClassName": "flag BA",
+      "label": "Bosnia",
+      "value": "BA"
+    },
+    {
+      "className": "flag ZM",
+      "tagClassName": "flag ZM",
+      "label": "Zambia ",
+      "value": "ZAM"
+    },
+    {
+      "className": "flag LB",
+      "tagClassName": "flag LB",
+      "label": "Lebanon",
+      "value": "LBN"
+    },
+    {
+      "className": "flag FJ",
+      "tagClassName": "flag FJ",
+      "label": "Fiji",
+      "value": "FJ"
+    },
+    {
+      "className": "flag DZ",
+      "tagClassName": "flag DZ",
+      "label": "Algeria ",
+      "value": "ALG"
+    },
+    {
+      "className": "flag AL",
+      "tagClassName": "flag AL",
+      "label": "Albania",
+      "value": "ALB"
+    },
+    {
+      "className": "flag BY",
+      "tagClassName": "flag BY",
+      "label": "Belarus",
+      "value": "BY"
+    },
+    {
+      "className": "flag GI",
+      "tagClassName": "flag GI",
+      "label": "Gibraltar",
+      "value": "GI"
+    },
+    {
+      "className": "flag CM",
+      "tagClassName": "flag CM",
+      "label": "Cameroon",
+      "value": "CM"
+    },
+    {
+      "className": "flag AD",
+      "tagClassName": "flag AD",
+      "label": "Andorra",
+      "value": "AND"
+    },
+    {
+      "className": "flag AM",
+      "tagClassName": "flag AM",
+      "label": "Armenia",
+      "value": "AM"
+    },
+    {
+      "className": "flag SL",
+      "tagClassName": "flag SL",
+      "label": "Sierra Leone",
+      "value": "SLE"
+    },
+    {
+      "className": "flag LI",
+      "tagClassName": "flag LI",
+      "label": "Liechtenstei",
+      "value": "LI"
+    },
+    {
+      "className": "flag AO",
+      "tagClassName": "flag AO",
+      "label": "Angola",
+      "value": "AO"
+    },
+    {
+      "className": "flag SY",
+      "tagClassName": "flag SY",
+      "label": "Syria",
+      "value": "SY"
+    },
+    {
+      "className": "flag UG",
+      "tagClassName": "flag UG",
+      "label": "Uganda",
+      "value": "UG"
+    },
+    {
+      "className": "flag AZ",
+      "tagClassName": "flag AZ",
+      "label": "Azerbaijan ",
+      "value": "AZE"
+    },
+    {
+      "className": "flag LA",
+      "tagClassName": "flag LA",
+      "label": "Laos",
+      "value": "LA"
+    },
+    {
+      "className": "flag IQ",
+      "tagClassName": "flag IQ",
+      "label": "Iraq ",
+      "value": "IRN"
+    },
+    {
+      "className": "flag AG",
+      "tagClassName": "flag AG",
+      "label": "Antigua and Barbuda",
+      "value": "ATG"
+    },
+    {
+      "className": "flag AI",
+      "tagClassName": "flag AI",
+      "label": "Anguilla",
+      "value": "AIA"
+    },
+    {
+      "className": "flag AN",
+      "tagClassName": "flag AN",
+      "label": "NL Antilles",
+      "value": "NA"
+    },
+    {
+      "className": "flag AQ",
+      "tagClassName": "flag AQ",
+      "label": "Antarctica",
+      "value": "ATA"
+    },
+    {
+      "className": "flag AS",
+      "tagClassName": "flag AS",
+      "label": "American Sam",
+      "value": "AQ"
+    },
+    {
+      "className": "flag AW",
+      "tagClassName": "flag AW",
+      "label": "Aruba",
+      "value": "ABW"
+    },
+    {
+      "className": "flag AX",
+      "tagClassName": "flag AX",
+      "label": "Aland Islands",
+      "value": "ALA"
+    },
+    {
+      "className": "flag BB",
+      "tagClassName": "flag BB",
+      "label": "Barbados",
+      "value": "BRB"
+    },
+    {
+      "className": "flag BF",
+      "tagClassName": "flag BF",
+      "label": "Burkina Faso",
+      "value": "BFA"
+    },
+    {
+      "className": "flag BI",
+      "tagClassName": "flag BI",
+      "label": "Burundi",
+      "value": "BDI"
+    },
+    {
+      "className": "flag BJ",
+      "tagClassName": "flag BJ",
+      "label": "Benin",
+      "value": "BEN"
+    },
+    {
+      "className": "flag BL",
+      "tagClassName": "flag BL",
+      "label": "Saint Barthélemy",
+      "value": "BLM"
+    },
+    {
+      "className": "flag BM",
+      "tagClassName": "flag BM",
+      "label": "Bermuda",
+      "value": "BMU"
+    },
+    {
+      "className": "flag BO",
+      "tagClassName": "flag BO",
+      "label": "Bolivia, Plurinational State of",
+      "value": "BOL"
+    },
+    {
+      "className": "flag BQ",
+      "tagClassName": "flag BQ",
+      "label": "Bonaire, Sint Eustatius and Saba",
+      "value": "BES"
+    },
+    {
+      "className": "flag BS",
+      "tagClassName": "flag BS",
+      "label": "Bahamas",
+      "value": "BHS"
+    },
+    {
+      "className": "flag BT",
+      "tagClassName": "flag BT",
+      "label": "Bhutan",
+      "value": "BTN"
+    },
+    {
+      "className": "flag BV",
+      "tagClassName": "flag BV",
+      "label": "Bouvet Island",
+      "value": "BVT"
+    },
+    {
+      "className": "flag BW",
+      "tagClassName": "flag BW",
+      "label": "Botswana",
+      "value": "BWA"
+    },
+    {
+      "className": "flag BZ",
+      "tagClassName": "flag BZ",
+      "label": "Belize",
+      "value": "BLZ"
+    },
+    {
+      "className": "flag CC",
+      "tagClassName": "flag CC",
+      "label": "Cocos (Keeling) Islands",
+      "value": "CCK"
+    },
+    {
+      "className": "flag CD",
+      "tagClassName": "flag CD",
+      "label": "Congo, the Democratic Republic of the",
+      "value": "COD"
+    },
+    {
+      "className": "flag CF",
+      "tagClassName": "flag CF",
+      "label": "C. A. R.",
+      "value": "CFR"
+    },
+    {
+      "className": "flag CG",
+      "tagClassName": "flag CG",
+      "label": "Congo",
+      "value": "COG"
+    },
+    {
+      "className": "flag CK",
+      "tagClassName": "flag CK",
+      "label": "Cook Islands",
+      "value": "COK"
+    },
+    {
+      "className": "flag CR",
+      "tagClassName": "flag CR",
+      "label": "Costa Rica",
+      "value": "CRI"
+    },
+    {
+      "className": "flag CU",
+      "tagClassName": "flag CU",
+      "label": "Cuba",
+      "value": "CUB"
+    },
+    {
+      "className": "flag CV",
+      "tagClassName": "flag CV",
+      "label": "Cape Verde",
+      "value": "CPV"
+    },
+    {
+      "className": "flag CW",
+      "tagClassName": "flag CW",
+      "label": "Curaçao",
+      "value": "CUW"
+    },
+    {
+      "className": "flag CX",
+      "tagClassName": "flag CX",
+      "label": "Christmas Island",
+      "value": "CXR"
+    },
+    {
+      "className": "flag DJ",
+      "tagClassName": "flag DJ",
+      "label": "Djibouti",
+      "value": "DJI"
+    },
+    {
+      "className": "flag DM",
+      "tagClassName": "flag DM",
+      "label": "Dominica",
+      "value": "DMA"
+    },
+    {
+      "className": "flag DO",
+      "tagClassName": "flag DO",
+      "label": "Dominican Republic",
+      "value": "DOM"
+    },
+    {
+      "className": "flag EH",
+      "tagClassName": "flag EH",
+      "label": "Western Sahara",
+      "value": "ESH"
+    },
+    {
+      "className": "flag ER",
+      "tagClassName": "flag ER",
+      "label": "Eritrea",
+      "value": "ERI"
+    },
+    {
+      "className": "flag ET",
+      "tagClassName": "flag ET",
+      "label": "Ethiopia",
+      "value": "ETH"
+    },
+    {
+      "className": "flag FK",
+      "tagClassName": "flag FK",
+      "label": "Falkland Islands (Malvinas)",
+      "value": "FLK"
+    },
+    {
+      "className": "flag FM",
+      "tagClassName": "flag FM",
+      "label": "Micronesia, Federated States of",
+      "value": "FSM"
+    },
+    {
+      "className": "flag GA",
+      "tagClassName": "flag GA",
+      "label": "Gabon",
+      "value": "GAB"
+    },
+    {
+      "className": "flag GD",
+      "tagClassName": "flag GD",
+      "label": "Grenada",
+      "value": "GRD"
+    },
+    {
+      "className": "flag GF",
+      "tagClassName": "flag GF",
+      "label": "French Guiana",
+      "value": "GUF"
+    },
+    {
+      "className": "flag GG",
+      "tagClassName": "flag GG",
+      "label": "Guernsey",
+      "value": "GGY"
+    },
+    {
+      "className": "flag GL",
+      "tagClassName": "flag GL",
+      "label": "Greenland",
+      "value": "GRL"
+    },
+    {
+      "className": "flag GM",
+      "tagClassName": "flag GM",
+      "label": "Gambia",
+      "value": "GMB"
+    },
+    {
+      "className": "flag GN",
+      "tagClassName": "flag GN",
+      "label": "Guinea",
+      "value": "GIN"
+    },
+    {
+      "className": "flag GP",
+      "tagClassName": "flag GP",
+      "label": "Guadeloupe",
+      "value": "GLP"
+    },
+    {
+      "className": "flag GS",
+      "tagClassName": "flag GS",
+      "label": "South Georgia and the South Sandwich Islands",
+      "value": "SGS"
+    },
+    {
+      "className": "flag GT",
+      "tagClassName": "flag GT",
+      "label": "Guatemala",
+      "value": "GTM"
+    },
+    {
+      "className": "flag GU",
+      "tagClassName": "flag GU",
+      "label": "Guam",
+      "value": "GUM"
+    },
+    {
+      "className": "flag GW",
+      "tagClassName": "flag GW",
+      "label": "Guinea-Bissau",
+      "value": "GNB"
+    },
+    {
+      "className": "flag GY",
+      "tagClassName": "flag GY",
+      "label": "Guyana",
+      "value": "GUY"
+    },
+    {
+      "className": "flag HM",
+      "tagClassName": "flag HM",
+      "label": "Heard Island and McDonald Islands",
+      "value": "HMD"
+    },
+    {
+      "className": "flag HN",
+      "tagClassName": "flag HN",
+      "label": "Honduras",
+      "value": "HND"
+    },
+    {
+      "className": "flag HT",
+      "tagClassName": "flag HT",
+      "label": "Haiti",
+      "value": "HTI"
+    },
+    {
+      "className": "flag IO",
+      "tagClassName": "flag IO",
+      "label": "British Indian Ocean Territory",
+      "value": "IOT"
+    },
+    {
+      "className": "flag JE",
+      "tagClassName": "flag JE",
+      "label": "Jersey",
+      "value": "JER"
+    },
+    {
+      "className": "flag JM",
+      "tagClassName": "flag JM",
+      "label": "Jamaica",
+      "value": "JAM"
+    },
+    {
+      "className": "flag KG",
+      "tagClassName": "flag KG",
+      "label": "Kyrgyzstan",
+      "value": "KGZ"
+    },
+    {
+      "className": "flag KI",
+      "tagClassName": "flag KI",
+      "label": "Kiribati",
+      "value": "KIR"
+    },
+    {
+      "className": "flag KM",
+      "tagClassName": "flag KM",
+      "label": "Comoros",
+      "value": "COM"
+    },
+    {
+      "className": "flag KN",
+      "tagClassName": "flag KN",
+      "label": "Saint Kitts and Nevis",
+      "value": "KNA"
+    },
+    {
+      "className": "flag KP",
+      "tagClassName": "flag KP",
+      "label": "Korea, Democratic People's Republic of",
+      "value": "PRK"
+    },
+    {
+      "className": "flag KZ",
+      "tagClassName": "flag KZ",
+      "label": "Kazakhstan",
+      "value": "KAZ"
+    },
+    {
+      "className": "flag LC",
+      "tagClassName": "flag LC",
+      "label": "Saint Lucia",
+      "value": "LCA"
+    },
+    {
+      "className": "flag LR",
+      "tagClassName": "flag LR",
+      "label": "Liberia",
+      "value": "LBR"
+    },
+    {
+      "className": "flag LS",
+      "tagClassName": "flag LS",
+      "label": "Lesotho",
+      "value": "LSO"
+    },
+    {
+      "className": "flag LY",
+      "tagClassName": "flag LY",
+      "label": "Libya",
+      "value": "LBY"
+    },
+    {
+      "className": "flag MD",
+      "tagClassName": "flag MD",
+      "label": "Moldova, Republic of",
+      "value": "MDA"
+    },
+    {
+      "className": "flag ME",
+      "tagClassName": "flag ME",
+      "label": "Montenegro",
+      "value": "MNE"
+    },
+    {
+      "className": "flag MF",
+      "tagClassName": "flag MF",
+      "label": "Saint Martin (French part)",
+      "value": "MAF"
+    },
+    {
+      "className": "flag MG",
+      "tagClassName": "flag MG",
+      "label": "Madagascar",
+      "value": "MDG"
+    },
+    {
+      "className": "flag MH",
+      "tagClassName": "flag MH",
+      "label": "Marshall Islands",
+      "value": "MHL"
+    },
+    {
+      "className": "flag MK",
+      "tagClassName": "flag MK",
+      "label": "Macedonia, the former Yugoslav Republic of",
+      "value": "MKD"
+    },
+    {
+      "className": "flag ML",
+      "tagClassName": "flag ML",
+      "label": "Mali",
+      "value": "MLI"
+    },
+    {
+      "className": "flag MM",
+      "tagClassName": "flag MM",
+      "label": "Myanmar",
+      "value": "MMR"
+    },
+    {
+      "className": "flag MN",
+      "tagClassName": "flag MN",
+      "label": "Mongolia",
+      "value": "MNG"
+    },
+    {
+      "className": "flag MO",
+      "tagClassName": "flag MO",
+      "label": "Macao",
+      "value": "MAC"
+    },
+    {
+      "className": "flag MP",
+      "tagClassName": "flag MP",
+      "label": "Northern Mariana Islands",
+      "value": "MNP"
+    },
+    {
+      "className": "flag MQ",
+      "tagClassName": "flag MQ",
+      "label": "Martinique",
+      "value": "MTQ"
+    },
+    {
+      "className": "flag MR",
+      "tagClassName": "flag MR",
+      "label": "Mauritania",
+      "value": "MRT"
+    },
+    {
+      "className": "flag MS",
+      "tagClassName": "flag MS",
+      "label": "Montserrat",
+      "value": "MSR"
+    },
+    {
+      "className": "flag MU",
+      "tagClassName": "flag MU",
+      "label": "Mauritius",
+      "value": "MUS"
+    },
+    {
+      "className": "flag MV",
+      "tagClassName": "flag MV",
+      "label": "Maldives",
+      "value": "MDV"
+    },
+    {
+      "className": "flag MW",
+      "tagClassName": "flag MW",
+      "label": "Malawi",
+      "value": "MWI"
+    },
+    {
+      "className": "flag MZ",
+      "tagClassName": "flag MZ",
+      "label": "Mozambique",
+      "value": "MOZ"
+    },
+    {
+      "className": "flag NA",
+      "tagClassName": "flag NA",
+      "label": "Namibia ",
+      "value": "NAM"
+    },
+    {
+      "className": "flag NC",
+      "tagClassName": "flag NC",
+      "label": "New Caledonia",
+      "value": "NCL"
+    },
+    {
+      "className": "flag NE",
+      "tagClassName": "flag NE",
+      "label": "Niger",
+      "value": "NER"
+    },
+    {
+      "className": "flag NF",
+      "tagClassName": "flag NF",
+      "label": "Norfolk Island",
+      "value": "NFK"
+    },
+    {
+      "className": "flag NI",
+      "tagClassName": "flag NI",
+      "label": "Nicaragua",
+      "value": "NIC"
+    },
+    {
+      "className": "flag NR",
+      "tagClassName": "flag NR",
+      "label": "Nauru",
+      "value": "NRU"
+    },
+    {
+      "className": "flag NU",
+      "tagClassName": "flag NU",
+      "label": "Niue",
+      "value": "NIU"
+    },
+    {
+      "className": "flag OM",
+      "tagClassName": "flag OM",
+      "label": "Oman",
+      "value": "OMN"
+    },
+    {
+      "className": "flag PF",
+      "tagClassName": "flag PF",
+      "label": "French Polynesia",
+      "value": "PYF"
+    },
+    {
+      "className": "flag PM",
+      "tagClassName": "flag PM",
+      "label": "Saint Pierre and Miquelon",
+      "value": "SPM"
+    },
+    {
+      "className": "flag PN",
+      "tagClassName": "flag PN",
+      "label": "Pitcairn",
+      "value": "PCN"
+    },
+    {
+      "className": "flag PR",
+      "tagClassName": "flag PR",
+      "label": "Puerto Rico",
+      "value": "PRI"
+    },
+    {
+      "className": "flag PS",
+      "tagClassName": "flag PS",
+      "label": "Palestinian Territory, Occupied",
+      "value": "PSE"
+    },
+    {
+      "className": "flag PW",
+      "tagClassName": "flag PW",
+      "label": "Palau",
+      "value": "PLW"
+    },
+    {
+      "className": "flag PY",
+      "tagClassName": "flag PY",
+      "label": "Paraguay",
+      "value": "PRY"
+    },
+    {
+      "className": "flag RE",
+      "tagClassName": "flag RE",
+      "label": "Reunion",
+      "value": "REU"
+    },
+    {
+      "className": "flag RS",
+      "tagClassName": "flag RS",
+      "label": "Serbia",
+      "value": "SRB"
+    },
+    {
+      "className": "flag RW",
+      "tagClassName": "flag RW",
+      "label": "Rwanda",
+      "value": "RW"
+    },
+    {
+      "className": "flag SB",
+      "tagClassName": "flag SB",
+      "label": "Solomon Islands",
+      "value": "SLB"
+    },
+    {
+      "className": "flag SC",
+      "tagClassName": "flag SC",
+      "label": "Seychelles",
+      "value": "SYC"
+    },
+    {
+      "className": "flag SD",
+      "tagClassName": "flag SD",
+      "label": "Sudan",
+      "value": "SDN"
+    },
+    {
+      "className": "flag SH",
+      "tagClassName": "flag SH",
+      "label": "Saint Helena, Ascension and Tristan da Cunha",
+      "value": "SHN"
+    },
+    {
+      "className": "flag SJ",
+      "tagClassName": "flag SJ",
+      "label": "Svalbard and Jan Mayen",
+      "value": "SJM"
+    },
+    {
+      "className": "flag SN",
+      "tagClassName": "flag SN",
+      "label": "Senegal",
+      "value": "SEN"
+    },
+    {
+      "className": "flag SO",
+      "tagClassName": "flag SO",
+      "label": "Somalia",
+      "value": "SOM"
+    },
+    {
+      "className": "flag SR",
+      "tagClassName": "flag SR",
+      "label": "Suriname",
+      "value": "SUR"
+    },
+    {
+      "className": "flag SS",
+      "tagClassName": "flag SS",
+      "label": "South Sudan",
+      "value": "SSD"
+    },
+    {
+      "className": "flag ST",
+      "tagClassName": "flag ST",
+      "label": "Sao Tome and Principe",
+      "value": "STP"
+    },
+    {
+      "className": "flag SV",
+      "tagClassName": "flag SV",
+      "label": "El Salvador",
+      "value": "SLV"
+    },
+    {
+      "className": "flag SX",
+      "tagClassName": "flag SX",
+      "label": "Sint Maarten (Dutch part)",
+      "value": "SXM"
+    },
+    {
+      "className": "flag SZ",
+      "tagClassName": "flag SZ",
+      "label": "Swaziland",
+      "value": "SWZ"
+    },
+    {
+      "className": "flag TC",
+      "tagClassName": "flag TC",
+      "label": "Turks and Caicos Islands",
+      "value": "TCA"
+    },
+    {
+      "className": "flag TD",
+      "tagClassName": "flag TD",
+      "label": "Chad",
+      "value": "TCD"
+    },
+    {
+      "className": "flag TF",
+      "tagClassName": "flag TF",
+      "label": "French Southern Territories",
+      "value": "ATF"
+    },
+    {
+      "className": "flag TG",
+      "tagClassName": "flag TG",
+      "label": "Togo",
+      "value": "TGO"
+    },
+    {
+      "className": "flag TJ",
+      "tagClassName": "flag TJ",
+      "label": "Tajikistan",
+      "value": "TJK"
+    },
+    {
+      "className": "flag TK",
+      "tagClassName": "flag TK",
+      "label": "Tokelau",
+      "value": "TKL"
+    },
+    {
+      "className": "flag TL",
+      "tagClassName": "flag TL",
+      "label": "Timor-Leste",
+      "value": "TLS"
+    },
+    {
+      "className": "flag TM",
+      "tagClassName": "flag TM",
+      "label": "Turkmenistan",
+      "value": "TKM"
+    },
+    {
+      "className": "flag TO",
+      "tagClassName": "flag TO",
+      "label": "Tonga",
+      "value": "TON"
+    },
+    {
+      "className": "flag TT",
+      "tagClassName": "flag TT",
+      "label": "Trinidad and Tobago",
+      "value": "TTO"
+    },
+    {
+      "className": "flag TV",
+      "tagClassName": "flag TV",
+      "label": "Tuvalu",
+      "value": "TUV"
+    },
+    {
+      "className": "flag TZ",
+      "tagClassName": "flag TZ",
+      "label": "Tanzania, United Republic of",
+      "value": "TZA"
+    },
+    {
+      "className": "flag UM",
+      "tagClassName": "flag UM",
+      "label": "United States Minor Outlying Islands",
+      "value": "UMI"
+    },
+    {
+      "className": "flag UY",
+      "tagClassName": "flag UY",
+      "label": "Uruguay",
+      "value": "URY"
+    },
+    {
+      "className": "flag VA",
+      "tagClassName": "flag VA",
+      "label": "Holy See (Vatican City State)",
+      "value": "VAT"
+    },
+    {
+      "className": "flag VC",
+      "tagClassName": "flag VC",
+      "label": "Saint Vincent and the Grenadines",
+      "value": "VCT"
+    },
+    {
+      "className": "flag VG",
+      "tagClassName": "flag VG",
+      "label": "Virgin Islands, British",
+      "value": "VGB"
+    },
+    {
+      "className": "flag VI",
+      "tagClassName": "flag VI",
+      "label": "Virgin Islands, U.S.",
+      "value": "VIR"
+    },
+    {
+      "className": "flag VU",
+      "tagClassName": "flag VU",
+      "label": "Vanuatu",
+      "value": "VU"
+    },
+    {
+      "className": "flag WF",
+      "tagClassName": "flag WF",
+      "label": "Wallis and Futuna",
+      "value": "WLF"
+    },
+    {
+      "className": "flag WS",
+      "tagClassName": "flag WS",
+      "label": "Samoa",
+      "value": "WSM"
+    },
+    {
+      "className": "flag YE",
+      "tagClassName": "flag YE",
+      "label": "Yemen",
+      "value": "YE"
+    },
+    {
+      "className": "flag YT",
+      "tagClassName": "flag YT",
+      "label": "Mayotte",
+      "value": "MYT"
+    }
+  ]
+  

@@ -1,0 +1,1038 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+
+.flag .node-label::before,
+.flag .tag::before {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;3
+  background: no-repeat center url('https://i.imgur.com/hNIELql.png');
+}
+
+.flag._African_Union .node-label::before,
+.flag._African_Union .tag::before {
+  background-position: 0 -16px;
+}
+.flag._Arab_League .node-label::before,
+.flag._Arab_League .tag::before {
+  background-position: 0 -32px;
+}
+.flag._ASEAN .node-label::before,
+.flag._ASEAN .tag::before {
+  background-position: 0 -48px;
+}
+.flag._CARICOM .node-label::before,
+.flag._CARICOM .tag::before {
+  background-position: 0 -64px;
+}
+.flag._CIS .node-label::before,
+.flag._CIS .tag::before {
+  background-position: 0 -80px;
+}
+.flag._Commonwealth .node-label::before,
+.flag._Commonwealth .tag::before {
+  background-position: 0 -96px;
+}
+.flag._England .node-label::before,
+.flag._England .tag::before {
+  background-position: 0 -112px;
+}
+.flag._European_Union,
+.flag.eu .node-label::before,
+.flag.eu .tag::before {
+  background-position: 0 -128px;
+}
+.flag._Islamic_Conference .node-label::before,
+.flag._Islamic_Conference .tag::before {
+  background-position: 0 -144px;
+}
+.flag._Kosovo .node-label::before,
+.flag._Kosovo .tag::before {
+  background-position: 0 -160px;
+}
+.flag._NATO .node-label::before,
+.flag._NATO .tag::before {
+  background-position: 0 -176px;
+}
+.flag._Northern_Cyprus .node-label::before,
+.flag._Northern_Cyprus .tag::before {
+  background-position: 0 -192px;
+}
+.flag._Northern_Ireland .node-label::before,
+.flag._Northern_Ireland .tag::before {
+  background-position: 0 -208px;
+}
+.flag._Olimpic_Movement .node-label::before,
+.flag._Olimpic_Movement .tag::before {
+  background-position: 0 -224px;
+}
+.flag._OPEC .node-label::before,
+.flag._OPEC .tag::before {
+  background-position: 0 -240px;
+}
+.flag._Red_Cross .node-label::before,
+.flag._Red_Cross .tag::before {
+  background-position: 0 -256px;
+}
+.flag._Scotland .node-label::before,
+.flag._Scotland .tag::before {
+  background-position: 0 -272px;
+}
+.flag._Somaliland .node-label::before,
+.flag._Somaliland .tag::before {
+  background-position: 0 -288px;
+}
+.flag._Tibet .node-label::before,
+.flag._Tibet .tag::before {
+  background-position: 0 -304px;
+}
+.flag._United_Nations .node-label::before,
+.flag._United_Nations .tag::before {
+  background-position: 0 -320px;
+}
+.flag._Wales .node-label::before,
+.flag._Wales .tag::before {
+  background-position: 0 -336px;
+}
+.flag.AD .node-label::before,
+.flag.AD .tag::before {
+  background-position: 0 -352px;
+}
+.flag.AE .node-label::before,
+.flag.AE .tag::before {
+  background-position: 0 -368px;
+}
+.flag.AF .node-label::before,
+.flag.AF .tag::before {
+  background-position: 0 -384px;
+}
+.flag.AG .node-label::before,
+.flag.AG .tag::before {
+  background-position: 0 -400px;
+}
+.flag.AI .node-label::before,
+.flag.AI .tag::before {
+  background-position: 0 -416px;
+}
+.flag.AL .node-label::before,
+.flag.AL .tag::before {
+  background-position: 0 -432px;
+}
+.flag.AM .node-label::before,
+.flag.AM .tag::before {
+  background-position: 0 -448px;
+}
+.flag.AO .node-label::before,
+.flag.AO .tag::before {
+  background-position: 0 -464px;
+}
+.flag.AQ .node-label::before,
+.flag.AQ .tag::before {
+  background-position: 0 -480px;
+}
+.flag.AR .node-label::before,
+.flag.AR .tag::before {
+  background-position: 0 -496px;
+}
+.flag.AS .node-label::before,
+.flag.AS .tag::before {
+  background-position: 0 -512px;
+}
+.flag.AT .node-label::before,
+.flag.AT .tag::before {
+  background-position: 0 -528px;
+}
+.flag.AU .node-label::before,
+.flag.AU .tag::before {
+  background-position: 0 -544px;
+}
+.flag.AW .node-label::before,
+.flag.AW .tag::before {
+  background-position: 0 -560px;
+}
+.flag.AX .node-label::before,
+.flag.AX .tag::before {
+  background-position: 0 -576px;
+}
+.flag.AZ .node-label::before,
+.flag.AZ .tag::before {
+  background-position: 0 -592px;
+}
+.flag.BA .node-label::before,
+.flag.BA .tag::before {
+  background-position: 0 -608px;
+}
+.flag.BB .node-label::before,
+.flag.BB .tag::before {
+  background-position: 0 -624px;
+}
+.flag.BD .node-label::before,
+.flag.BD .tag::before {
+  background-position: 0 -640px;
+}
+.flag.BE .node-label::before,
+.flag.BE .tag::before {
+  background-position: 0 -656px;
+}
+.flag.BF .node-label::before,
+.flag.BF .tag::before {
+  background-position: 0 -672px;
+}
+.flag.BG .node-label::before,
+.flag.BG .tag::before {
+  background-position: 0 -688px;
+}
+.flag.BH .node-label::before,
+.flag.BH .tag::before {
+  background-position: 0 -704px;
+}
+.flag.BI .node-label::before,
+.flag.BI .tag::before {
+  background-position: 0 -720px;
+}
+.flag.BJ .node-label::before,
+.flag.BJ .tag::before {
+  background-position: 0 -736px;
+}
+.flag.BM .node-label::before,
+.flag.BM .tag::before {
+  background-position: 0 -752px;
+}
+.flag.BN .node-label::before,
+.flag.BN .tag::before {
+  background-position: 0 -768px;
+}
+.flag.BO .node-label::before,
+.flag.BO .tag::before {
+  background-position: 0 -784px;
+}
+.flag.BR .node-label::before,
+.flag.BR .tag::before {
+  background-position: 0 -800px;
+}
+.flag.BS .node-label::before,
+.flag.BS .tag::before {
+  background-position: 0 -816px;
+}
+.flag.BT .node-label::before,
+.flag.BT .tag::before {
+  background-position: 0 -832px;
+}
+.flag.BW .node-label::before,
+.flag.BW .tag::before {
+  background-position: 0 -848px;
+}
+.flag.BY .node-label::before,
+.flag.BY .tag::before {
+  background-position: 0 -864px;
+}
+.flag.BZ .node-label::before,
+.flag.BZ .tag::before {
+  background-position: 0 -880px;
+}
+.flag.CA .node-label::before,
+.flag.CA .tag::before {
+  background-position: 0 -896px;
+}
+.flag.CG .node-label::before,
+.flag.CG .tag::before {
+  background-position: 0 -912px;
+}
+.flag.CF .node-label::before,
+.flag.CF .tag::before {
+  background-position: 0 -928px;
+}
+.flag.CD .node-label::before,
+.flag.CD .tag::before {
+  background-position: 0 -944px;
+}
+.flag.CH .node-label::before,
+.flag.CH .tag::before {
+  background-position: 0 -960px;
+}
+.flag.CI .node-label::before,
+.flag.CI .tag::before {
+  background-position: 0 -976px;
+}
+.flag.CK .node-label::before,
+.flag.CK .tag::before {
+  background-position: 0 -992px;
+}
+.flag.CL .node-label::before,
+.flag.CL .tag::before {
+  background-position: 0 -1008px;
+}
+.flag.CM .node-label::before,
+.flag.CM .tag::before {
+  background-position: 0 -1024px;
+}
+.flag.CN .node-label::before,
+.flag.CN .tag::before {
+  background-position: 0 -1040px;
+}
+.flag.CO .node-label::before,
+.flag.CO .tag::before {
+  background-position: 0 -1056px;
+}
+.flag.CR .node-label::before,
+.flag.CR .tag::before {
+  background-position: 0 -1072px;
+}
+.flag.CU .node-label::before,
+.flag.CU .tag::before {
+  background-position: 0 -1088px;
+}
+.flag.CV .node-label::before,
+.flag.CV .tag::before {
+  background-position: 0 -1104px;
+}
+.flag.CY .node-label::before,
+.flag.CY .tag::before {
+  background-position: 0 -1120px;
+}
+.flag.CZ .node-label::before,
+.flag.CZ .tag::before {
+  background-position: 0 -1136px;
+}
+.flag.DE .node-label::before,
+.flag.DE .tag::before {
+  background-position: 0 -1152px;
+}
+.flag.DJ .node-label::before,
+.flag.DJ .tag::before {
+  background-position: 0 -1168px;
+}
+.flag.DK .node-label::before,
+.flag.DK .tag::before {
+  background-position: 0 -1184px;
+}
+.flag.DM .node-label::before,
+.flag.DM .tag::before {
+  background-position: 0 -1200px;
+}
+.flag.DO .node-label::before,
+.flag.DO .tag::before {
+  background-position: 0 -1216px;
+}
+.flag.DZ .node-label::before,
+.flag.DZ .tag::before {
+  background-position: 0 -1232px;
+}
+.flag.EC .node-label::before,
+.flag.EC .tag::before {
+  background-position: 0 -1248px;
+}
+.flag.EE .node-label::before,
+.flag.EE .tag::before {
+  background-position: 0 -1264px;
+}
+.flag.EG .node-label::before,
+.flag.EG .tag::before {
+  background-position: 0 -1280px;
+}
+.flag.EH .node-label::before,
+.flag.EH .tag::before {
+  background-position: 0 -1296px;
+}
+.flag.ER .node-label::before,
+.flag.ER .tag::before {
+  background-position: 0 -1312px;
+}
+.flag.ES .node-label::before,
+.flag.ES .tag::before {
+  background-position: 0 -1328px;
+}
+.flag.ET .node-label::before,
+.flag.ET .tag::before {
+  background-position: 0 -1344px;
+}
+.flag.FI .node-label::before,
+.flag.FI .tag::before {
+  background-position: 0 -1360px;
+}
+.flag.FJ .node-label::before,
+.flag.FJ .tag::before {
+  background-position: 0 -1376px;
+}
+.flag.FM .node-label::before,
+.flag.FM .tag::before {
+  background-position: 0 -1392px;
+}
+.flag.FO .node-label::before,
+.flag.FO .tag::before {
+  background-position: 0 -1408px;
+}
+.flag.FR .node-label::before,
+.flag.FR .tag::before {
+  background-position: 0 -1424px;
+}
+.flag.BL,
+.flag.CP,
+.flag.MF,
+.flag.YT .node-label::before,
+.flag.YT .tag::before {
+  background-position: 0 -1424px;
+}
+.flag.GA .node-label::before,
+.flag.GA .tag::before {
+  background-position: 0 -1440px;
+}
+.flag.GB .node-label::before,
+.flag.GB .tag::before {
+  background-position: 0 -1456px;
+}
+.flag.SH .node-label::before,
+.flag.SH .tag::before {
+  background-position: 0 -1456px;
+}
+.flag.GD .node-label::before,
+.flag.GD .tag::before {
+  background-position: 0 -1472px;
+}
+.flag.GE .node-label::before,
+.flag.GE .tag::before {
+  background-position: 0 -1488px;
+}
+.flag.GG .node-label::before,
+.flag.GG .tag::before {
+  background-position: 0 -1504px;
+}
+.flag.GH .node-label::before,
+.flag.GH .tag::before {
+  background-position: 0 -1520px;
+}
+.flag.GI .node-label::before,
+.flag.GI .tag::before {
+  background-position: 0 -1536px;
+}
+.flag.GL .node-label::before,
+.flag.GL .tag::before {
+  background-position: 0 -1552px;
+}
+.flag.GM .node-label::before,
+.flag.GM .tag::before {
+  background-position: 0 -1568px;
+}
+.flag.GN .node-label::before,
+.flag.GN .tag::before {
+  background-position: 0 -1584px;
+}
+.flag.GP .node-label::before,
+.flag.GP .tag::before {
+  background-position: 0 -1600px;
+}
+.flag.GQ .node-label::before,
+.flag.GQ .tag::before {
+  background-position: 0 -1616px;
+}
+.flag.GR .node-label::before,
+.flag.GR .tag::before {
+  background-position: 0 -1632px;
+}
+.flag.GT .node-label::before,
+.flag.GT .tag::before {
+  background-position: 0 -1648px;
+}
+.flag.GU .node-label::before,
+.flag.GU .tag::before {
+  background-position: 0 -1664px;
+}
+.flag.GW .node-label::before,
+.flag.GW .tag::before {
+  background-position: 0 -1680px;
+}
+.flag.GY .node-label::before,
+.flag.GY .tag::before {
+  background-position: 0 -1696px;
+}
+.flag.HK .node-label::before,
+.flag.HK .tag::before {
+  background-position: 0 -1712px;
+}
+.flag.HN .node-label::before,
+.flag.HN .tag::before {
+  background-position: 0 -1728px;
+}
+.flag.HR .node-label::before,
+.flag.HR .tag::before {
+  background-position: 0 -1744px;
+}
+.flag.HT .node-label::before,
+.flag.HT .tag::before {
+  background-position: 0 -1760px;
+}
+.flag.HU .node-label::before,
+.flag.HU .tag::before {
+  background-position: 0 -1776px;
+}
+.flag.ID .node-label::before,
+.flag.ID .tag::before {
+  background-position: 0 -1792px;
+}
+.flag.MC .node-label::before,
+.flag.MC .tag::before {
+  background-position: 0 -1792px;
+}
+.flag.IE .node-label::before,
+.flag.IE .tag::before {
+  background-position: 0 -1808px;
+}
+.flag.IL .node-label::before,
+.flag.IL .tag::before {
+  background-position: 0 -1824px;
+}
+.flag.IM .node-label::before,
+.flag.IM .tag::before {
+  background-position: 0 -1840px;
+}
+.flag.IN .node-label::before,
+.flag.IN .tag::before {
+  background-position: 0 -1856px;
+}
+.flag.IQ .node-label::before,
+.flag.IQ .tag::before {
+  background-position: 0 -1872px;
+}
+.flag.IR .node-label::before,
+.flag.IR .tag::before {
+  background-position: 0 -1888px;
+}
+.flag.IS .node-label::before,
+.flag.IS .tag::before {
+  background-position: 0 -1904px;
+}
+.flag.IT .node-label::before,
+.flag.IT .tag::before {
+  background-position: 0 -1920px;
+}
+.flag.JE .node-label::before,
+.flag.JE .tag::before {
+  background-position: 0 -1936px;
+}
+.flag.JM .node-label::before,
+.flag.JM .tag::before {
+  background-position: 0 -1952px;
+}
+.flag.JO .node-label::before,
+.flag.JO .tag::before {
+  background-position: 0 -1968px;
+}
+.flag.JP .node-label::before,
+.flag.JP .tag::before {
+  background-position: 0 -1984px;
+}
+.flag.KE .node-label::before,
+.flag.KE .tag::before {
+  background-position: 0 -2000px;
+}
+.flag.KG .node-label::before,
+.flag.KG .tag::before {
+  background-position: 0 -2016px;
+}
+.flag.KH .node-label::before,
+.flag.KH .tag::before {
+  background-position: 0 -2032px;
+}
+.flag.KI .node-label::before,
+.flag.KI .tag::before {
+  background-position: 0 -2048px;
+}
+.flag.KM .node-label::before,
+.flag.KM .tag::before {
+  background-position: 0 -2064px;
+}
+.flag.KN .node-label::before,
+.flag.KN .tag::before {
+  background-position: 0 -2080px;
+}
+.flag.KP .node-label::before,
+.flag.KP .tag::before {
+  background-position: 0 -2096px;
+}
+.flag.KR .node-label::before,
+.flag.KR .tag::before {
+  background-position: 0 -2112px;
+}
+.flag.KW .node-label::before,
+.flag.KW .tag::before {
+  background-position: 0 -2128px;
+}
+.flag.KY .node-label::before,
+.flag.KY .tag::before {
+  background-position: 0 -2144px;
+}
+.flag.KZ .node-label::before,
+.flag.KZ .tag::before {
+  background-position: 0 -2160px;
+}
+.flag.LA .node-label::before,
+.flag.LA .tag::before {
+  background-position: 0 -2176px;
+}
+.flag.LB .node-label::before,
+.flag.LB .tag::before {
+  background-position: 0 -2192px;
+}
+.flag.LC .node-label::before,
+.flag.LC .tag::before {
+  background-position: 0 -2208px;
+}
+.flag.LI .node-label::before,
+.flag.LI .tag::before {
+  background-position: 0 -2224px;
+}
+.flag.LK .node-label::before,
+.flag.LK .tag::before {
+  background-position: 0 -2240px;
+}
+.flag.LR .node-label::before,
+.flag.LR .tag::before {
+  background-position: 0 -2256px;
+}
+.flag.LS .node-label::before,
+.flag.LS .tag::before {
+  background-position: 0 -2272px;
+}
+.flag.LT .node-label::before,
+.flag.LT .tag::before {
+  background-position: 0 -2288px;
+}
+.flag.LU .node-label::before,
+.flag.LU .tag::before {
+  background-position: 0 -2304px;
+}
+.flag.LV .node-label::before,
+.flag.LV .tag::before {
+  background-position: 0 -2320px;
+}
+.flag.LY .node-label::before,
+.flag.LY .tag::before {
+  background-position: 0 -2336px;
+}
+.flag.MA .node-label::before,
+.flag.MA .tag::before {
+  background-position: 0 -2352px;
+}
+.flag.MD .node-label::before,
+.flag.MD .tag::before {
+  background-position: 0 -2368px;
+}
+.flag.ME .node-label::before,
+.flag.ME .tag::before {
+  background-position: 0 -2384px;
+}
+.flag.MG .node-label::before,
+.flag.MG .tag::before {
+  background-position: 0 -2400px;
+}
+.flag.MH .node-label::before,
+.flag.MH .tag::before {
+  background-position: 0 -2416px;
+}
+.flag.MK .node-label::before,
+.flag.MK .tag::before {
+  background-position: 0 -2432px;
+}
+.flag.ML .node-label::before,
+.flag.ML .tag::before {
+  background-position: 0 -2448px;
+}
+.flag.MM .node-label::before,
+.flag.MM .tag::before {
+  background-position: 0 -2464px;
+}
+.flag.MN .node-label::before,
+.flag.MN .tag::before {
+  background-position: 0 -2480px;
+}
+.flag.MO .node-label::before,
+.flag.MO .tag::before {
+  background-position: 0 -2496px;
+}
+.flag.MQ .node-label::before,
+.flag.MQ .tag::before {
+  background-position: 0 -2512px;
+}
+.flag.MR .node-label::before,
+.flag.MR .tag::before {
+  background-position: 0 -2528px;
+}
+.flag.MS .node-label::before,
+.flag.MS .tag::before {
+  background-position: 0 -2544px;
+}
+.flag.MT .node-label::before,
+.flag.MT .tag::before {
+  background-position: 0 -2560px;
+}
+.flag.MU .node-label::before,
+.flag.MU .tag::before {
+  background-position: 0 -2576px;
+}
+.flag.MV .node-label::before,
+.flag.MV .tag::before {
+  background-position: 0 -2592px;
+}
+.flag.MW .node-label::before,
+.flag.MW .tag::before {
+  background-position: 0 -2608px;
+}
+.flag.MX .node-label::before,
+.flag.MX .tag::before {
+  background-position: 0 -2624px;
+}
+.flag.MY .node-label::before,
+.flag.MY .tag::before {
+  background-position: 0 -2640px;
+}
+.flag.MZ .node-label::before,
+.flag.MZ .tag::before {
+  background-position: 0 -2656px;
+}
+.flag.NA .node-label::before,
+.flag.NA .tag::before {
+  background-position: 0 -2672px;
+}
+.flag.NC .node-label::before,
+.flag.NC .tag::before {
+  background-position: 0 -2688px;
+}
+.flag.NE .node-label::before,
+.flag.NE .tag::before {
+  background-position: 0 -2704px;
+}
+.flag.NG .node-label::before,
+.flag.NG .tag::before {
+  background-position: 0 -2720px;
+}
+.flag.NI .node-label::before,
+.flag.NI .tag::before {
+  background-position: 0 -2736px;
+}
+.flag.NL .node-label::before,
+.flag.NL .tag::before {
+  background-position: 0 -2752px;
+}
+.flag.BQ .node-label::before,
+.flag.BQ .tag::before {
+  background-position: 0 -2752px;
+}
+.flag.NO .node-label::before,
+.flag.NO .tag::before {
+  background-position: 0 -2768px;
+}
+.flag.BV,
+.flag.NQ,
+.flag.SJ .node-label::before,
+.flag.SJ .tag::before {
+  background-position: 0 -2768px;
+}
+.flag.NP .node-label::before,
+.flag.NP .tag::before {
+  background-position: 0 -2784px;
+}
+.flag.NR .node-label::before,
+.flag.NR .tag::before {
+  background-position: 0 -2800px;
+}
+.flag.NZ .node-label::before,
+.flag.NZ .tag::before {
+  background-position: 0 -2816px;
+}
+.flag.OM .node-label::before,
+.flag.OM .tag::before {
+  background-position: 0 -2832px;
+}
+.flag.PA .node-label::before,
+.flag.PA .tag::before {
+  background-position: 0 -2848px;
+}
+.flag.PE .node-label::before,
+.flag.PE .tag::before {
+  background-position: 0 -2864px;
+}
+.flag.PF .node-label::before,
+.flag.PF .tag::before {
+  background-position: 0 -2880px;
+}
+.flag.PG .node-label::before,
+.flag.PG .tag::before {
+  background-position: 0 -2896px;
+}
+.flag.PH .node-label::before,
+.flag.PH .tag::before {
+  background-position: 0 -2912px;
+}
+.flag.PK .node-label::before,
+.flag.PK .tag::before {
+  background-position: 0 -2928px;
+}
+.flag.PL .node-label::before,
+.flag.PL .tag::before {
+  background-position: 0 -2944px;
+}
+.flag.PR .node-label::before,
+.flag.PR .tag::before {
+  background-position: 0 -2960px;
+}
+.flag.PS .node-label::before,
+.flag.PS .tag::before {
+  background-position: 0 -2976px;
+}
+.flag.PT .node-label::before,
+.flag.PT .tag::before {
+  background-position: 0 -2992px;
+}
+.flag.PW .node-label::before,
+.flag.PW .tag::before {
+  background-position: 0 -3008px;
+}
+.flag.PY .node-label::before,
+.flag.PY .tag::before {
+  background-position: 0 -3024px;
+}
+.flag.QA .node-label::before,
+.flag.QA .tag::before {
+  background-position: 0 -3040px;
+}
+.flag.RE .node-label::before,
+.flag.RE .tag::before {
+  background-position: 0 -3056px;
+}
+.flag.RO .node-label::before,
+.flag.RO .tag::before {
+  background-position: 0 -3072px;
+}
+.flag.RS .node-label::before,
+.flag.RS .tag::before {
+  background-position: 0 -3088px;
+}
+.flag.RU .node-label::before,
+.flag.RU .tag::before {
+  background-position: 0 -3104px;
+}
+.flag.RW .node-label::before,
+.flag.RW .tag::before {
+  background-position: 0 -3120px;
+}
+.flag.SA .node-label::before,
+.flag.SA .tag::before {
+  background-position: 0 -3136px;
+}
+.flag.SB .node-label::before,
+.flag.SB .tag::before {
+  background-position: 0 -3152px;
+}
+.flag.SC .node-label::before,
+.flag.SC .tag::before {
+  background-position: 0 -3168px;
+}
+.flag.SD .node-label::before,
+.flag.SD .tag::before {
+  background-position: 0 -3184px;
+}
+.flag.SE .node-label::before,
+.flag.SE .tag::before {
+  background-position: 0 -3200px;
+}
+.flag.SG .node-label::before,
+.flag.SG .tag::before {
+  background-position: 0 -3216px;
+}
+.flag.SI .node-label::before,
+.flag.SI .tag::before {
+  background-position: 0 -3232px;
+}
+.flag.SK .node-label::before,
+.flag.SK .tag::before {
+  background-position: 0 -3248px;
+}
+.flag.SL .node-label::before,
+.flag.SL .tag::before {
+  background-position: 0 -3264px;
+}
+.flag.SM .node-label::before,
+.flag.SM .tag::before {
+  background-position: 0 -3280px;
+}
+.flag.SN .node-label::before,
+.flag.SN .tag::before {
+  background-position: 0 -3296px;
+}
+.flag.SO .node-label::before,
+.flag.SO .tag::before {
+  background-position: 0 -3312px;
+}
+.flag.SR .node-label::before,
+.flag.SR .tag::before {
+  background-position: 0 -3328px;
+}
+.flag.ST .node-label::before,
+.flag.ST .tag::before {
+  background-position: 0 -3344px;
+}
+.flag.SV .node-label::before,
+.flag.SV .tag::before {
+  background-position: 0 -3360px;
+}
+.flag.SY .node-label::before,
+.flag.SY .tag::before {
+  background-position: 0 -3376px;
+}
+.flag.SZ .node-label::before,
+.flag.SZ .tag::before {
+  background-position: 0 -3392px;
+}
+.flag.TC .node-label::before,
+.flag.TC .tag::before {
+  background-position: 0 -3408px;
+}
+.flag.TD .node-label::before,
+.flag.TD .tag::before {
+  background-position: 0 -3424px;
+}
+.flag.TG .node-label::before,
+.flag.TG .tag::before {
+  background-position: 0 -3440px;
+}
+.flag.TH .node-label::before,
+.flag.TH .tag::before {
+  background-position: 0 -3456px;
+}
+.flag.TJ .node-label::before,
+.flag.TJ .tag::before {
+  background-position: 0 -3472px;
+}
+.flag.TL .node-label::before,
+.flag.TL .tag::before {
+  background-position: 0 -3488px;
+}
+.flag.TM .node-label::before,
+.flag.TM .tag::before {
+  background-position: 0 -3504px;
+}
+.flag.TN .node-label::before,
+.flag.TN .tag::before {
+  background-position: 0 -3520px;
+}
+.flag.TO .node-label::before,
+.flag.TO .tag::before {
+  background-position: 0 -3536px;
+}
+.flag.TR .node-label::before,
+.flag.TR .tag::before {
+  background-position: 0 -3552px;
+}
+.flag.TT .node-label::before,
+.flag.TT .tag::before {
+  background-position: 0 -3568px;
+}
+.flag.TV .node-label::before,
+.flag.TV .tag::before {
+  background-position: 0 -3584px;
+}
+.flag.TW .node-label::before,
+.flag.TW .tag::before {
+  background-position: 0 -3600px;
+}
+.flag.TZ .node-label::before,
+.flag.TZ .tag::before {
+  background-position: 0 -3616px;
+}
+.flag.UA .node-label::before,
+.flag.UA .tag::before {
+  background-position: 0 -3632px;
+}
+.flag.UG .node-label::before,
+.flag.UG .tag::before {
+  background-position: 0 -3648px;
+}
+.flag.US .node-label::before,
+.flag.US .tag::before {
+  background-position: 0 -3664px;
+}
+.flag.UY .node-label::before,
+.flag.UY .tag::before {
+  background-position: 0 -3680px;
+}
+.flag.UZ .node-label::before,
+.flag.UZ .tag::before {
+  background-position: 0 -3696px;
+}
+.flag.VA .node-label::before,
+.flag.VA .tag::before {
+  background-position: 0 -3712px;
+}
+.flag.VC .node-label::before,
+.flag.VC .tag::before {
+  background-position: 0 -3728px;
+}
+.flag.VE .node-label::before,
+.flag.VE .tag::before {
+  background-position: 0 -3744px;
+}
+.flag.VG .node-label::before,
+.flag.VG .tag::before {
+  background-position: 0 -3760px;
+}
+.flag.VI .node-label::before,
+.flag.VI .tag::before {
+  background-position: 0 -3776px;
+}
+.flag.VN .node-label::before,
+.flag.VN .tag::before {
+  background-position: 0 -3792px;
+}
+.flag.VU .node-label::before,
+.flag.VU .tag::before {
+  background-position: 0 -3808px;
+}
+.flag.WS .node-label::before,
+.flag.WS .tag::before {
+  background-position: 0 -3824px;
+}
+.flag.YE .node-label::before,
+.flag.YE .tag::before {
+  background-position: 0 -3840px;
+}
+.flag.ZA .node-label::before,
+.flag.ZA .tag::before {
+  background-position: 0 -3856px;
+}
+.flag.ZM .node-label::before,
+.flag.ZM .tag::before {
+  background-position: 0 -3872px;
+}
+.flag.ZW .node-label::before,
+.flag.ZW .tag::before {
+  background-position: 0 -3888px;
+}
+.flag.SX .node-label::before,
+.flag.SX .tag::before {
+  background-position: 0 -3904px;
+}
+.flag.CW .node-label::before,
+.flag.CW .tag::before {
+  background-position: 0 -3920px;
+}
+.flag.SS .node-label::before,
+.flag.SS .tag::before {
+  background-position: 0 -3936px;
+}
+.flag.NU .node-label::before,
+.flag.NU .tag::before {
+  background-position: 0 -3952px;
+}
+
+.action {
+  cursor: pointer;
+  display: table-cell;
+  padding-left: 4px;
+  float: right;
+  margin-left: auto;
+}
