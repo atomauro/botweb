@@ -13,6 +13,9 @@ import Routes from './Routes';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/scss/index.scss';
 
+import { Provider } from 'react-redux';
+import store from './store';
+
 const browserHistory = createBrowserHistory();
 
 Chart.helpers.extend(Chart.elements.Rectangle.prototype, {
@@ -26,13 +29,14 @@ validate.validators = {
 
 export default class App extends Component {
   render() {
-    return (     
+    return (
+      <Provider store={store}>
         <ThemeProvider theme={theme}>
           <Router history={browserHistory}>
             <Routes />
           </Router>
         </ThemeProvider>
-     
+      </Provider>
     );
   }
 }
