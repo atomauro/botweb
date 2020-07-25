@@ -12,6 +12,7 @@ import {
   RadioGroup,
   FormControlLabel,
   Radio,
+  Grid,
   Paper
 } from '@material-ui/core';
 import PayIconStart from '@material-ui/icons/AccountBalance';
@@ -89,14 +90,17 @@ const Cart = props => {
         </ListItem>
         <Divider />
         <ListItem>
-          <Button
-            variant="contained"
-            color="primary"
-            className={classes.button}
-            endIcon={<PayIconEnd />}
-            >
-            Pay
-          </Button>
+          <Grid container justify="center">
+            <Grid item>
+              <Button
+                variant="contained"
+                color="primary"
+                className={classes.button}
+                endIcon={<PayIconEnd />}>
+                Pay
+              </Button>
+            </Grid>
+          </Grid>
         </ListItem>
       </List>
     </Paper>
