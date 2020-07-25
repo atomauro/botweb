@@ -36,11 +36,7 @@ const useStyles = makeStyles(theme => ({
     height: 'auto',
     alignContent: 'center',
     align: 'center'
-  },
-  appBar: {
-    position: 'relative',
-    width: '100%'
-  },
+  }, 
   title: {
     marginLeft: 80,
     flex: 1,

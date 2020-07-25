@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import clsx from 'clsx';
 
 import { makeStyles } from '@material-ui/styles';
 import {
@@ -19,6 +20,10 @@ import {
 } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    width: 'auto',
+    marginBottom: theme.spacing(2),
+  },
   rootPicker: {
     width: '100%'
   },
@@ -70,73 +75,73 @@ const WebcamSites = props => {
   };
 
   return (
-    <div>
-      <Paper className={classes.root} elevation={4}>
-        <CardHeader
-          title="Webcam Sites"
-          subheader="Add the model profile for each one."
-        />
-        <Divider />
-        <CardContent>
-          <div align={'center'}>
-            <Grid container >
-              <Grid item md={6} xs={12}>
-                <FormControl variant="filled" className={classes.formControl}>
-                  <InputLabel id="demo-simple-select-filled-label">
-                    Site
-                  </InputLabel>
-                  <Select
-                    labelId="demo-simple-select-filled-label"
-                    id="demo-simple-select-filled"
-                    value={site}
-                    onChange={handleChange}>
-                    <MenuItem value={'Chaturbate'}>Chaturbate</MenuItem>
-                    <MenuItem value={'Bongacams'}>Bongacams</MenuItem>
-                    <MenuItem value={'StripChat'}>StripChat</MenuItem>
-                  </Select>
-                </FormControl>
-              </Grid>
-              <Grid item md={6} xs={12}>
-                <div className={classes.avatarContainer} align="center">
-                  <Avatar alt="Site" className={classes.avatarSite} />
-                </div>
-              </Grid>
-            </Grid>
-          </div>
+    <React.Fragment>
+      <Paper {...rest} className={clsx(classes.root, className)} elevation={4}>
+        <form autoComplete="off" noValidate>
+          <CardHeader
+            title="Webcam Sites"
+            subheader="Add the model profile for each one."
+          />
           <Divider />
-          <form autoComplete="off" noValidate>
-            
-              <Grid item md={6} xs={12}>
-                <TextField
-                fullWidth
-                  helperText="Please specify the exact user"
-                  label="User"
-                  margin="dense"
-                  name="userName"
-                  onChange={handleChange}
-                  required
-                  value={values.userName}
-                  variant="outlined"
-                />
+          <CardContent>
+            <div align={'center'}>
+              <Grid container>
+                <Grid item md={6} xs={12}>
+                  <FormControl variant="filled" className={classes.formControl}>
+                    <InputLabel id="demo-simple-select-filled-label">
+                      Site
+                    </InputLabel>
+                    <Select
+                    
+                      labelId="demo-simple-select-filled-label"
+                      id="demo-simple-select-filled"
+                      value={site}
+                      onChange={handleChange}>
+                      <MenuItem value={'Chaturbate'}>Chaturbate</MenuItem>
+                      <MenuItem value={'Bongacams'}>Bongacams</MenuItem>
+                      <MenuItem value={'StripChat'}>StripChat</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Grid>
+                <Grid item md={6} xs={12}>
+                  <div className={classes.avatarContainer} align="center">
+                    <Avatar alt="Site" className={classes.avatarSite} />
+                  </div>
+                </Grid>
               </Grid>
-              <Grid item md={6} xs={12}>
-                <TextField
+            </div>
+            <Divider />
+
+            <Grid item md={6} xs={12}>
+              <TextField
                 fullWidth
-                  helperText="Please specify the exact url Room"
-                  label="URL Room"
-                  margin="dense"
-                  name="urlRoom"
-                  onChange={handleChange}
-                  required
-                  value={values.urlRoom}
-                  variant="outlined"
-                />
-              </Grid>
-         
-          </form>
-        </CardContent>
+                helperText="Please specify the exact user"
+                label="User"
+                margin="dense"
+                name="userName"
+                onChange={handleChange}
+                required
+                value={values.userName}
+                variant="outlined"
+              />
+            </Grid>
+            <Grid item md={6} xs={12}>
+              <TextField
+                fullWidth
+                helperText="Please specify the exact url Room"
+                label="URL Room"
+                margin="dense"
+                name="urlRoom"
+                onChange={handleChange}
+                required
+                value={values.urlRoom}
+                variant="outlined"
+              />
+            </Grid>
+          </CardContent>
+        </form>
       </Paper>
-    </div>
+    </React.Fragment>
   );
 };
 

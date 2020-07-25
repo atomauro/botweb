@@ -118,10 +118,7 @@ const useColorlibStepIconStyles = makeStyles({
     flex: 1,
     color: 'white',
     align: 'center'
-  },
-  stepper: {
-    width: '100%'
-  }
+  },  
 });
 
 const useStyles = makeStyles(theme => ({
@@ -154,6 +151,12 @@ const useStyles = makeStyles(theme => ({
   containerStep: {
     width: '100%',
     height: '100%'
+  },
+  stepper: {
+    width: '100%'
+  },
+  containerStepper:{
+    width:'100%'
   }
 }));
 
@@ -237,7 +240,7 @@ const AddModel = props => {
     <React.Fragment>
       <CssBaseline />
 
-      <Grid container spacing={2}>
+      <Grid container spacing={0}>
         <Grid item lg={12} md={12} xm={12}>
           <div align="center">
             <Button onClick={props.increment}>Add</Button>
@@ -248,8 +251,8 @@ const AddModel = props => {
           </div>
         </Grid>
 
-        <Grid item lg={12} md={12} xm={12} justify="center" container spacing={0}>
-          <Paper>
+        <Grid item lg={12} md={12} xm={12} justify="center" container >
+          <Paper className={classes.containerStepper}>
             <Stepper
               alternativeLabel
               className={classes.stepper}

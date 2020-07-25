@@ -83,8 +83,8 @@ const RestrictCountries = props => {
     <div>
       <Paper className={classes.root} elevation={4}>
         <CardHeader
-          title="Webcam Sites"
-          subheader="Add the model profile for each one."
+          title="Restrict countries"
+          subheader="Add the countries for each profile"
         />
         <Divider />
         <CardContent>
