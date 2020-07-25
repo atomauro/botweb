@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import PropTypes from 'prop-types';
 
 import { makeStyles, withStyles } from '@material-ui/core/styles';
@@ -22,6 +24,7 @@ import {
   Paper,
   ListItem,
   useScrollTrigger,
+  IconButton,
   CssBaseline
 } from '@material-ui/core';
 
@@ -209,7 +212,7 @@ function getStepContent(step) {
   }
 }
 
-export default function AddModel(props) {
+const AddModel = props => {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
@@ -227,9 +230,15 @@ export default function AddModel(props) {
   };
 
   return (
-    <React.Fragment>
+    <React.Fragment>  
       <CssBaseline />
-
+      <div align="center">
+        <Button onClick={props.increment}>Add</Button>
+        <button onClick={props.addByOneAsync}>Add 1 Async</button>
+      </div>
+      <div align="center">
+        <Typography variant="h3">There are {props.count} models</Typography>
+      </div>
       <Paper className={classes.root}>
         <div align="center">
           <Stepper
@@ -258,7 +267,7 @@ export default function AddModel(props) {
                 </Button>
               </div>
             ) : (
-              <div className={classes.containerStep} >
+              <div className={classes.containerStep}>
                 <div className={classes.contentStep}>
                   {getStepContent(activeStep)}
                 </div>
@@ -285,3 +294,13 @@ export default function AddModel(props) {
     </React.Fragment>
   );
 }
+const mapState = state => ({
+  badge: state.badge,
+});
+
+const mapDispatch = ({ badge: { addBy, addByAsync }}) => ({
+  addByOne: () => addBy(1),
+  addByOneAsync: () => addByAsync(1)
+});
+
+export default AddModel;

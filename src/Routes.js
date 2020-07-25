@@ -6,8 +6,10 @@ import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
 
 import {
   Dashboard as DashboardView,
-  ProductList as ProductListView,
+  Packages as PackagesView,
   UserList as UserListView,
+  Boost as BoostView,
+  NewBoost as NewBoostView,
   Balance as BalanceView,
   Typography as TypographyView,
   Icons as IconsView,
@@ -40,10 +42,22 @@ const Routes = () => {
         path="/models"
       />
       <RouteWithLayout
-        component={ProductListView}
+        component={PackagesView}
         exact
         layout={MainLayout}
         path="/packages"
+      />
+      <RouteWithLayout
+        component={BoostView}
+        exact
+        layout={MainLayout}
+        path="/boost"
+      />
+      <RouteWithLayout
+        component={NewBoostView}
+        exact
+        layout={MainLayout}
+        path="/new-boost"
       />
       <RouteWithLayout
         component={BalanceView}

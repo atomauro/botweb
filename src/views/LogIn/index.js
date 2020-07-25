@@ -2,7 +2,6 @@ import React from 'react';
 import _ from 'lodash/core';
 
 import { connect } from 'react-redux';
-import { login } from '../../store/actions/Login';
 
 import api from '../../api';
 
@@ -69,7 +68,7 @@ class index extends React.Component {
 
     console.log('user', user);
 
-    this.props.login(user);
+   // this.props.login(user);
     this.props.history.push('/dashboard');
   }
 
@@ -99,7 +98,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = {
-  login
+  //login
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(index);
