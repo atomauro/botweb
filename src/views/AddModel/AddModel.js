@@ -22,6 +22,7 @@ import {
   Button,
   Typography,
   Paper,
+  Grid,
   ListItem,
   useScrollTrigger,
   IconButton,
@@ -117,6 +118,9 @@ const useColorlibStepIconStyles = makeStyles({
     flex: 1,
     color: 'white',
     align: 'center'
+  },
+  stepper: {
+    width: '100%'
   }
 });
 
@@ -143,7 +147,7 @@ const useStyles = makeStyles(theme => ({
     align: 'center'
   },
   contentStep: {
-    width: 600,
+    width: '100%',
     height: 'auto',
     align: 'center'
   },
@@ -230,75 +234,86 @@ const AddModel = props => {
   };
 
   return (
-    <React.Fragment>  
+    <React.Fragment>
       <CssBaseline />
-      <div align="center">
-        <Button onClick={props.increment}>Add</Button>
-        <button onClick={props.addByOneAsync}>Add 1 Async</button>
-      </div>
-      <div align="center">
-        <Typography variant="h3">There are {props.count} models</Typography>
-      </div>
-      <Paper className={classes.root}>
-        <div align="center">
-          <Stepper
-            alternativeLabel
-            activeStep={activeStep}
-            connector={<ColorlibConnector />}>
-            {steps.map(label => (
-              <Step key={label}>
-                <StepLabel StepIconComponent={ColorlibStepIcon}>
-                  {label}
-                </StepLabel>
-              </Step>
-            ))}
-          </Stepper>
-        </div>
 
-        <ListItem>
-          <div>
-            {activeStep === steps.length ? (
-              <div>
-                <Typography className={classes.instructions}>
-                  All steps completed - you&apos;re finished
-                </Typography>
-                <Button onClick={handleReset} className={classes.button}>
-                  Reset
-                </Button>
-              </div>
-            ) : (
-              <div className={classes.containerStep}>
-                <div className={classes.contentStep}>
-                  {getStepContent(activeStep)}
-                </div>
-                <div align="center">
-                  <Button
-                    disabled={activeStep === 0}
-                    onClick={handleBack}
-                    className={classes.button}>
-                    Back
-                  </Button>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={handleNext}
-                    className={classes.button}>
-                    {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                  </Button>
-                </div>
-              </div>
-            )}
+      <Grid container spacing={2}>
+        <Grid item lg={12} md={12} xm={12}>
+          <div align="center">
+            <Button onClick={props.increment}>Add</Button>
+            <button onClick={props.addByOneAsync}>Add 1 Async</button>
           </div>
-        </ListItem>
-      </Paper>
+          <div align="center">
+            <Typography variant="h3">There are {props.count} models</Typography>
+          </div>
+        </Grid>
+
+        <Grid item lg={12} md={12} xm={12} justify="center" container spacing={0}>
+          <Paper>
+            <Stepper
+              alternativeLabel
+              className={classes.stepper}
+              activeStep={activeStep}
+              connector={<ColorlibConnector />}>
+              {steps.map(label => (
+                <Step key={label}>
+                  <StepLabel StepIconComponent={ColorlibStepIcon}>
+                    {label}
+                  </StepLabel>
+                </Step>
+              ))}
+            </Stepper>
+          </Paper>
+        </Grid>
+
+        <Grid item lg={12} md={12} xs={12} justify="center" container>
+          <div className={classes.root}>
+            <ListItem>
+              <div>
+                {activeStep === steps.length ? (
+                  <div>
+                    <Typography className={classes.instructions}>
+                      All steps completed - you&apos;re finished
+                    </Typography>
+                    <Button onClick={handleReset} className={classes.button}>
+                      Reset
+                    </Button>
+                  </div>
+                ) : (
+                  <div className={classes.containerStep}>
+                    <div className={classes.contentStep}>
+                      {getStepContent(activeStep)}
+                    </div>
+                    <div align="center">
+                      <Button
+                        disabled={activeStep === 0}
+                        onClick={handleBack}
+                        className={classes.button}>
+                        Back
+                      </Button>
+                      <Button
+                        variant="contained"
+                        color="primary"
+                        onClick={handleNext}
+                        className={classes.button}>
+                        {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                      </Button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </ListItem>
+          </div>
+        </Grid>
+      </Grid>
     </React.Fragment>
   );
-}
+};
 const mapState = state => ({
-  badge: state.badge,
+  badge: state.badge
 });
 
-const mapDispatch = ({ badge: { addBy, addByAsync }}) => ({
+const mapDispatch = ({ badge: { addBy, addByAsync } }) => ({
   addByOne: () => addBy(1),
   addByOneAsync: () => addByAsync(1)
 });
