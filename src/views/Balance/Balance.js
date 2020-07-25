@@ -29,13 +29,9 @@ const Balance = props => {
   return (
     <div className={classes.root}>
       <Grid container spacing={4}>
+        
         <Grid item lg={6} md={6} xs={12} spacing={4} container>
-          <Grid item lg={12} md={12} xl={3} xs={12}>
-            <TokenDistribution />
-          </Grid>
-        </Grid>
-        <Grid item lg={6} md={6} xs={12} spacing={4} container>
-          <Grid item lg={12} md={6} xl={3} xs={12} onClick={handleClickTotal}>
+          <Grid item lg={12} md={12} xl={3} xs={12} onClick={handleClickTotal}>
             <Total />
           </Grid>
           <Grid item lg={6} md={6} xl={3} xs={12}>
@@ -46,6 +42,12 @@ const Balance = props => {
           </Grid>
           <Grid item lg={12} md={12} xl={3} xs={12}>
             <UsesByPackage />
+          </Grid>
+        </Grid>
+
+        <Grid item lg={6} md={6} xs={12} spacing={4} container>
+          <Grid item lg={12} md={12} xl={3} xs={12}>
+            <TokenDistribution />
           </Grid>
         </Grid>
       </Grid>

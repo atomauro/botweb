@@ -2,15 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography, Button } from '@material-ui/core';
 import { connect } from 'react-redux';
+import { BoostToolbar } from './components';
 
-import {
-  MagicPackage,
-  FastPackage,
-  TasksProgress,
-  Total,
-  LatestSales,
-  UsesByPackage,
-  LatestProducts,
+import {  
   LatestOrders
 } from './components';
 
@@ -25,23 +19,11 @@ const Boost = props => {
 
   return (
     <div className={classes.root}>
-      
+      <BoostToolbar/>
       <Grid container spacing={4}>
         
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <Total />
-        </Grid>
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <TasksProgress />
-        </Grid>
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <FastPackage />
-        </Grid>
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <MagicPackage />
-        </Grid>        
-        <Grid item lg={12} md={6} xl={3} xs={12}>
-          <UsesByPackage />
+        <Grid item lg={12} md={12} xl={12} xs={12}>
+          <LatestOrders />        
         </Grid>
       </Grid>
     </div>

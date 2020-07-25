@@ -9,6 +9,7 @@ import {
   Packages as PackagesView,
   UserList as UserListView,
   Boost as BoostView,
+  NewBoost as NewBoostView,
   Balance as BalanceView,
   Typography as TypographyView,
   Icons as IconsView,
@@ -51,6 +52,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/boost"
+      />
+      <RouteWithLayout
+        component={NewBoostView}
+        exact
+        layout={MainLayout}
+        path="/new-boost"
       />
       <RouteWithLayout
         component={BalanceView}
