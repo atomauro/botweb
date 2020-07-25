@@ -12,6 +12,7 @@ import {
 } from '@material-ui/core';
 import FlashBoostIcon from '@material-ui/icons/EvStation';
 import MagicBoostIcon from '@material-ui/icons/Whatshot';
+import PriceIcon from '@material-ui/icons/MonetizationOn'
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -35,18 +36,32 @@ const useStyles = makeStyles(theme => ({
   },
   statsIcon: {
     color: theme.palette.icon,
+    marginLeft: theme.spacing(1)
+  },
+  priceItem: {
+    display: 'flex',
+    alignItems: 'center',
+    colorBackground: theme.palette.primary,
+  },
+  priceIcon: {
+    color: theme.palette.green,
     marginRight: theme.spacing(1)
-  }
+  },
 }));
 
 const ProductCard = props => {
   const { className, product, ...rest } = props;
-
   const classes = useStyles();
 
   return (
-    <Paper {...rest} className={clsx(classes.root, className)} elevation={3}>
+    <Paper {...rest} className={clsx(classes.root, className)} elevation={1}>
       <CardContent>
+      <Grid className={classes.priceItem} item>
+            <PriceIcon className={classes.priceIcon} />
+            <Typography display="inline" variant="body1">
+              {product.price}
+            </Typography>
+          </Grid>
         <div className={classes.imageContainer}>
           <img alt="Product" className={classes.image} src={product.imageUrl} />
         </div>
@@ -63,13 +78,13 @@ const ProductCard = props => {
           <Grid className={classes.statsItem} item>
             <FlashBoostIcon className={classes.statsIcon} />
             <Typography display="inline" variant="body2">
-              Up to {product.flashBoost} FLASH BOOST
+              {product.flashBoost} FLASH 
             </Typography>
           </Grid>
           <Grid className={classes.statsItem} item>
             <MagicBoostIcon className={classes.statsIcon} />
             <Typography display="inline" variant="body2">
-              Up to {product.magicBoost} MAGIC BOOST
+             {product.magicBoost} MAGIC 
             </Typography>
           </Grid>
         </Grid>

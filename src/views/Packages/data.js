@@ -3,7 +3,8 @@ import uuid from 'uuid/v1';
 export default [
   {
     id: uuid(),
-    title: '1000 COINS',
+    title: '1000 Tokens',
+    price: '10 USD',
     description:
       'This is the better option to give it a try! recomended for first time.',
     imageUrl: '/images/products/1.png',
@@ -12,7 +13,8 @@ export default [
   },
   {
     id: uuid(),
-    title: '2000 COINS',
+    title: '2000 Tokens',
+    price: '20 USD',
     description:
       'This is the better option to give it a try! recomended for first time.',
     imageUrl: '/images/products/2.png',
@@ -21,7 +23,8 @@ export default [
   },
   {
     id: uuid(),
-    title: '3000 COINS',
+    title: '3000 Tokens',
+    price: '30 USD',
     description:
       'This is the better option to give it a try! recomended for first time.',
     imageUrl: '/images/products/3.png',
@@ -30,16 +33,18 @@ export default [
   },
   {
     id: uuid(),
-    title: '4000 COINS',
+    title: '4000 Tokens',
+    price: '40 USD',
     description:
       'This is the better option to give it a try! recomended for first time.',
     imageUrl: '/images/products/4.png',
-    B: '31',
+    flashBoost: '31',
     magicBoost: '5'
   },
   {
     id: uuid(),
-    title: '5000 COINS',
+    title: '5000 Tokens',
+    price: '50 USD',
     description:
       'This is the better option to give it a try! recomended for first time.',
     imageUrl: '/images/products/5.png',
@@ -48,7 +53,8 @@ export default [
   },
   {
     id: uuid(),
-    title: '6000 COINS',
+    title: '6000 Tokens',
+    price: '60 USD',
     description:
       'This is the better option to give it a try! recomended for first time.',
     imageUrl: '/images/products/6.png',
@@ -57,7 +63,8 @@ export default [
   },
   {
     id: uuid(),
-    title: '7000 COINS',
+    title: '7000 Tokens',
+    price: '70 USD',
     description:
       'This is the better option to give it a try! recomended for first time.',
     imageUrl: '/images/products/7.png',

@@ -13,6 +13,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import StatisticsIcon from '@material-ui/icons/BarChart';
 import BalanceIcon from '@material-ui/icons/AccountBalanceWallet';
+import TokensIcon from '@material-ui/icons/GroupWork';
 
 import { Profile, SidebarNav, UpgradePlan } from './components';
 
@@ -57,14 +58,19 @@ const Sidebar = props => {
     },
     {
       title: 'Boost',
-      href: '/packages',
+      href: '/boost',
       icon: <FireIcon />      
     },
     {
       title: 'Balance',
       href: '/balance',
       icon: <BalanceIcon />
-    },      
+    },  
+    {
+      title: 'Tokens',
+      href: '/packages',
+      icon: <TokensIcon />
+    },       
     {
       title: 'Account',
       href: '/account',

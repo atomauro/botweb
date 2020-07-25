@@ -62,7 +62,7 @@ const UpgradePlan = props => {
         <Button
           color="primary"
           component="a"
-          href="https://devias.io/products/devias-kit-pro"
+          href="./packages"
           variant="contained"
         >
           Go now

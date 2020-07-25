@@ -6,42 +6,47 @@ import { connect } from 'react-redux';
 import {
   MagicPackage,
   FastPackage,
-  TasksProgress,
+  TokenDistribution,
   Total,
   LatestSales,
-  UsesByPackage,
-  LatestProducts,
-  LatestOrders
+  UsesByPackage
 } from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(4)
+    padding: theme.spacing(4),
+    paddingRight: theme.spacing(0)
   }
 }));
 
 const Balance = props => {
   const classes = useStyles();
 
+  const handleClickTotal = () => {
+    props.history.push('/packages');
+  };
+
   return (
     <div className={classes.root}>
-      
       <Grid container spacing={4}>
-        
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <Total />
+        <Grid item lg={6} md={6} xs={12} spacing={4} container>
+          <Grid item lg={12} md={12} xl={3} xs={12}>
+            <TokenDistribution />
+          </Grid>
         </Grid>
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <TasksProgress />
-        </Grid>
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <FastPackage />
-        </Grid>
-        <Grid item lg={6} sm={6} xl={3} xs={12}>
-          <MagicPackage />
-        </Grid>        
-        <Grid item lg={12} md={6} xl={3} xs={12}>
-          <UsesByPackage />
+        <Grid item lg={6} md={6} xs={12} spacing={4} container>
+          <Grid item lg={12} md={6} xl={3} xs={12} onClick={handleClickTotal}>
+            <Total />
+          </Grid>
+          <Grid item lg={6} md={6} xl={3} xs={12}>
+            <FastPackage />
+          </Grid>
+          <Grid item lg={6} md={6} xl={3} xs={12}>
+            <MagicPackage />
+          </Grid>
+          <Grid item lg={12} md={12} xl={3} xs={12}>
+            <UsesByPackage />
+          </Grid>
         </Grid>
       </Grid>
     </div>

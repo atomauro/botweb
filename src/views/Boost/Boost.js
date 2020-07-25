@@ -1,65 +1,60 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/styles';
-import { IconButton, Grid, Typography } from '@material-ui/core';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import { Grid, Typography, Button } from '@material-ui/core';
+import { connect } from 'react-redux';
 
-import { ProductsToolbar, ProductCard } from './components';
-import mockData from './data';
+import {
+  MagicPackage,
+  FastPackage,
+  TasksProgress,
+  Total,
+  LatestSales,
+  UsesByPackage,
+  LatestProducts,
+  LatestOrders
+} from './components';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(3)
-  },
-  content: {
-    marginTop: theme.spacing(2)
-  },
-  pagination: {
-    marginTop: theme.spacing(3),
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end'
+    padding: theme.spacing(4)
   }
 }));
 
-const ProductList = () => {
+const Boost = props => {
   const classes = useStyles();
-
-  const [products] = useState(mockData);
 
   return (
     <div className={classes.root}>
-      <ProductsToolbar />
-      <div className={classes.content}>
-        <Grid
-          container
-          spacing={3}
-        >
-          {products.map(product => (
-            <Grid
-              item
-              key={product.id}
-              lg={4}
-              md={6}
-              xs={12}
-              
-            >
-              <ProductCard product={product} />
-            </Grid>
-          ))}
+      
+      <Grid container spacing={4}>
+        
+        <Grid item lg={6} sm={6} xl={3} xs={12}>
+          <Total />
         </Grid>
-      </div>
-      <div className={classes.pagination}>
-        <Typography variant="caption">1-7 of 10</Typography>
-        <IconButton>
-          <ChevronLeftIcon />
-        </IconButton>
-        <IconButton>
-          <ChevronRightIcon />
-        </IconButton>
-      </div>
+        <Grid item lg={6} sm={6} xl={3} xs={12}>
+          <TasksProgress />
+        </Grid>
+        <Grid item lg={6} sm={6} xl={3} xs={12}>
+          <FastPackage />
+        </Grid>
+        <Grid item lg={6} sm={6} xl={3} xs={12}>
+          <MagicPackage />
+        </Grid>        
+        <Grid item lg={12} md={6} xl={3} xs={12}>
+          <UsesByPackage />
+        </Grid>
+      </Grid>
     </div>
   );
 };
 
-export default ProductList;
+const mapState = state => ({
+  badge: state.badge
+});
+
+const mapDispatch = ({ badge: { addBy, addByAsync } }) => ({
+  addByOne: () => addBy(1),
+  addByOneAsync: () => addByAsync(1)
+});
+
+export default connect(mapState, mapDispatch)(Boost);
