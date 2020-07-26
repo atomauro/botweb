@@ -27,6 +27,10 @@ const Packages = () => {
 
   const [products] = useState(mockData);
 
+  const [selected, setSelected] = useState(false);
+
+  const handleClickCard = ()=> setSelected(!selected);
+
   return (
     <div className={classes.root}>
       <ProductsToolbar />
