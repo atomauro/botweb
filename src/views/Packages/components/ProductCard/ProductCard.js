@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
@@ -12,10 +12,17 @@ import {
 } from '@material-ui/core';
 import FlashBoostIcon from '@material-ui/icons/EvStation';
 import MagicBoostIcon from '@material-ui/icons/Whatshot';
-import PriceIcon from '@material-ui/icons/MonetizationOn'
+import PriceIcon from '@material-ui/icons/MonetizationOn';
 
 const useStyles = makeStyles(theme => ({
-  root: {},
+  root: {   
+  },
+  rootSelected:{
+    borderRadius: 5,
+    borderStyle: 'solid',
+    border: 2,
+    borderColor:  theme.palette.primary
+  },
   imageContainer: {
     height: 64,
     width: 64,
@@ -41,27 +48,31 @@ const useStyles = makeStyles(theme => ({
   priceItem: {
     display: 'flex',
     alignItems: 'center',
-    colorBackground: theme.palette.primary,
+    colorBackground: theme.palette.primary
   },
   priceIcon: {
     color: theme.palette.green,
     marginRight: theme.spacing(1)
-  },
+  }
 }));
 
 const ProductCard = props => {
   const { className, product, ...rest } = props;
   const classes = useStyles();
 
+  const [selected, setSelected] = useState(false);
+
+  const handleClickCard = ()=> setSelected(!selected);
+
   return (
-    <Paper {...rest} className={clsx(classes.root, className)} elevation={1}>
+    <Paper {...rest} className={selected ? classes.rootSelected : classes.root} elevation={1} onClick={handleClickCard}>
       <CardContent>
-      <Grid className={classes.priceItem} item>
-            <PriceIcon className={classes.priceIcon} />
-            <Typography display="inline" variant="body1">
-              {product.price}
-            </Typography>
-          </Grid>
+        <Grid className={classes.priceItem} item>
+          <PriceIcon className={classes.priceIcon} />
+          <Typography display="inline" variant="body1">
+            {product.price}
+          </Typography>
+        </Grid>
         <div className={classes.imageContainer}>
           <img alt="Product" className={classes.image} src={product.imageUrl} />
         </div>
@@ -78,13 +89,13 @@ const ProductCard = props => {
           <Grid className={classes.statsItem} item>
             <FlashBoostIcon className={classes.statsIcon} />
             <Typography display="inline" variant="body2">
-              {product.flashBoost} FLASH 
+              {product.flashBoost} FLASH
             </Typography>
           </Grid>
           <Grid className={classes.statsItem} item>
             <MagicBoostIcon className={classes.statsIcon} />
             <Typography display="inline" variant="body2">
-             {product.magicBoost} MAGIC 
+              {product.magicBoost} MAGIC
             </Typography>
           </Grid>
         </Grid>

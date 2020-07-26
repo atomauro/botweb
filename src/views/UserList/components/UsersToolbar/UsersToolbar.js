@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
-import { Button, Dialog, Link } from '@material-ui/core';
+import { IconButton, Button, Dialog, Link } from '@material-ui/core';
 
 import { SearchInput } from 'components';
 
 import AddIcon from '@material-ui/icons/PersonAdd';
+import RefreshIcon from '@material-ui/icons/Refresh';
 import AddModel from '../UsersAddDialog/UsersAddDialog';
 
 const useStyles = makeStyles(theme => ({
@@ -29,6 +30,10 @@ const useStyles = makeStyles(theme => ({
   },
   searchInput: {
     marginRight: theme.spacing(1)
+  },
+  refreshButton: {
+    width: 40,
+    height: 40
   }
 }));
 
@@ -64,6 +69,9 @@ const UsersToolbar = props => {
           className={classes.searchInput}
           placeholder="Search model"
         />
+        <IconButton color="primary" variant="outlined">
+          <RefreshIcon />
+        </IconButton>
       </div>
     </div>
   );
