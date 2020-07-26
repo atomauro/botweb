@@ -5,7 +5,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 
 import { ProductsToolbar, ProductCard, Cart } from './components';
-import mockData from './data';
+import packages from './data';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 const Packages = () => {
   const classes = useStyles();
 
-  const [products] = useState(mockData);
+  const [products] = useState(packages);
 
   const [selected, setSelected] = useState(false);
 
