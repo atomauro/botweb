@@ -10,7 +10,7 @@ export default [
       city: 'Parkersburg',
       street: '2849 Fulton Street'
     },
-    email: 'ekaterina.tankova@devias.io',
+    email: 'ekaterina.tankova@gmail.com',
     phone: '304-428-3097',
     avatarUrl: '/images/avatars/avatar_1.jpg',
     createdAt: 1555016400000
@@ -24,7 +24,7 @@ export default [
       city: 'Iowa',
       street: '1865  Pleasant Hill Road'
     },
-    email: 'cao.yu@devias.io',
+    email: 'cao.yu@gmail.com',
     avatarUrl: '/images/avatars/avatar_2.jpg',
     phone: '712-351-5711',
     createdAt: 1555016400000
@@ -38,7 +38,7 @@ export default [
       city: 'Atlanta',
       street: '4894  Lakeland Park Drive'
     },
-    email: 'alexa.richardson@devias.io',
+    email: 'alexa.richardson@gmail.com',
     phone: '770-635-2682',
     avatarUrl: '/images/avatars/avatar_3.jpg',
     createdAt: 1555016400000
@@ -52,7 +52,7 @@ export default [
       city: 'Dover',
       street: '4158  Hedge Street'
     },
-    email: 'anje.keizer@devias.io',
+    email: 'anje.keizer@gmail.com',
     avatarUrl: '/images/avatars/default.jpeg',
     phone: '908-691-3242',
     createdAt: 1554930000000
@@ -66,7 +66,7 @@ export default [
       city: 'Dallas',
       street: '75247'
     },
-    email: 'clarke.gillebert@devias.io',
+    email: 'clarke.gillebert@gmail.com',
     phone: '972-333-4106',
     avatarUrl: '/images/avatars/default.jpeg',
     createdAt: 1554757200000
@@ -80,7 +80,7 @@ export default [
       city: 'Bakerfield',
       street: '317 Angus Road'
     },
-    email: 'adam.denisov@devias.io',
+    email: 'adam.denisov@gmail.com',
     phone: '858-602-3409',
     avatarUrl: '/images/avatars/default.jpeg',
     createdAt: 1554670800000
