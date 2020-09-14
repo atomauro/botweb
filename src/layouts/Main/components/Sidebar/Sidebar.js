@@ -62,16 +62,6 @@ const Sidebar = props => {
       icon: <FireIcon />      
     },
     {
-      title: 'Balance',
-      href: '/balance',
-      icon: <BalanceIcon />
-    },  
-    {
-      title: 'Tokens',
-      href: '/packages',
-      icon: <TokensIcon />
-    },       
-    {
       title: 'Account',
       href: '/account',
       icon: <AccountBoxIcon />
@@ -99,7 +89,7 @@ const Sidebar = props => {
         <Profile />
         <Divider className={classes.divider} />
         <SidebarNav className={classes.nav} pages={pages} />
-        <UpgradePlan />
+        {/* <UpgradePlan /> */}
       </div>
     </Drawer>
   );
