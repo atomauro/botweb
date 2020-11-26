@@ -35,7 +35,7 @@ export default function MouseOverPopover() {
         onMouseLeave={handlePopoverClose}
       >
         Hover with a Popover.
-      <Popover
+      {/* <Popover
         id="mouse-over-popover"
         className={classes.popover}
         classes={{
@@ -55,7 +55,8 @@ export default function MouseOverPopover() {
         disableRestoreFocus
       >
         <Typography></Typography>
-      </Popover>
+      </Popover> */}
+      
       </Typography>
     </div>
   );
