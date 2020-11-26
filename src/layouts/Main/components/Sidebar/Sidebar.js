@@ -70,12 +70,7 @@ const Sidebar = props => {
       title: 'Settings',
       href: '/settings',
       icon: <SettingsIcon />
-    },
-    {
-      title: 'Statistics',
-      href: '/statistics',
-      icon: <StatisticsIcon />
-    },
+    }
   ];
 
   return (

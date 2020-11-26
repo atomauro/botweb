@@ -17,7 +17,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 
 import Loader from '../../components/Loading/Loader/Loader';
 
-import Logo from '../../assets/icons/icon-128.png';
+import Logo from '../../assets/icons/LogoLogin.png';
 import Slide1 from '../../assets/slide3_1.jpg';
 import Slide2 from '../../assets/slide3_1.jpg';
 
@@ -28,6 +28,7 @@ const useStyles = makeStyles(theme => ({
   image: {
     backgroundImage: `url(${Slide1})`,
     backgroundRepeat: 'no-repeat',
+    marginBottom:30,
     backgroundColor:
       theme.palette.type === 'light'
         ? theme.palette.grey[50]
@@ -43,7 +44,7 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     margin: theme.spacing(1),
-    backgroundColor: '#40AB94'
+    backgroundColor: 'rgb(26,91,121)'
   },
   form: {
     width: '100%', // Fix IE 11 issue.
@@ -51,7 +52,7 @@ const useStyles = makeStyles(theme => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
-    backgroundColor: '#40AB94'
+    backgroundColor: 'rgb(26,91,121)'
   },
   textDanger: {
     color: 'red',
@@ -160,10 +161,10 @@ export default function Login(props) {
                 &copy;{' '}
                 <Link
                   component="a"
-                  href="https://elfo.com.co/"
+                  href="https://latiweb.com/"
                   target="_blank"
                   align="center">
-                  Elfo Traffic | For Webcam Models
+                  Latiweb Traffic | For Webcam Models
                 </Link>
                 . 2020
               </Typography>

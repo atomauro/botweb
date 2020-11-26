@@ -43,7 +43,7 @@ const Profile = props => {
     name: 'Juan Bustos',
     avatar: '/images/avatars/juanbustos.jpeg',
     email: 'juanbustos.com@gmail.com',
-    role: 'Manager'
+    role: 'Monitor'
   };
 
   return (
@@ -64,7 +64,7 @@ const Profile = props => {
           aria-owns={open ? 'mouse-over-popover' : undefined}
           aria-haspopup="true"
           variant="h4"
-          color="secondary">
+          color="primary">
           {user.role}
         </Typography>
       </div>
