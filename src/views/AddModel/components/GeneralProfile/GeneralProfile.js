@@ -58,8 +58,6 @@ const GeneralProfile = props => {
     firstName: '',
     lastName: '',
     email: '',
-    password: '',
-    confirmPassword: '',
     phone: '',
     state: '',
     country: '',
@@ -156,70 +154,7 @@ const GeneralProfile = props => {
                   variant="outlined"
                 />
               </Grid>
-              <Grid item md={6} xs={12}>
-                <FormControl
-                  fullWidth
-                  className={clsx(classes.margin, classes.textField)}
-                  variant="outlined">
-                  <InputLabel required htmlFor="outlined-adornment-password">
-                    Password
-                  </InputLabel>
-                  <OutlinedInput
-                    id="outlined-adornment-password"
-                    type={values.password ? 'text' : 'password'}
-                    value={values.password}
-                    onChange={handleChange('password')}
-                    endAdornment={
-                      <InputAdornment position="end">
-                        <IconButton
-                          aria-label="toggle password visibility"
-                          onClick={handleClickShowPassword}
-                          onMouseDown={handleMouseDownPassword}
-                          edge="end">
-                          {values.showPassword ? (
-                            <Visibility />
-                          ) : (
-                            <VisibilityOff />
-                          )}
-                        </IconButton>
-                      </InputAdornment>
-                    }
-                    labelWidth={70}
-                  />
-                </FormControl>
-              </Grid>
-              <Grid item md={6} xs={12}>
-                <FormControl
-                  fullWidth
-                  className={clsx(classes.margin, classes.textField)}
-                  variant="outlined">
-                  <InputLabel required htmlFor="outlined-adornment-password">
-                    Confirm Password
-                  </InputLabel>
-                  <OutlinedInput
-                    id="outlined-adornment-password"
-                    type={values.confirmPassword ? 'text' : 'password'}
-                    value={values.confirmPassword}
-                    onChange={handleChange('confirmPassword')}
-                    endAdornment={
-                      <InputAdornment position="end">
-                        <IconButton
-                          aria-label="toggle password visibility"
-                          onClick={handleClickShowPassword}
-                          onMouseDown={handleMouseDownPassword}
-                          edge="end">
-                          {values.showConfirmPassword ? (
-                            <Visibility />
-                          ) : (
-                            <VisibilityOff />
-                          )}
-                        </IconButton>
-                      </InputAdornment>
-                    }
-                    labelWidth={122}
-                  />
-                </FormControl>
-              </Grid>
+              
 
               <Grid item md={6} xs={12}>
                 <TextField

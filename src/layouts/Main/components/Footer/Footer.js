@@ -19,8 +19,8 @@ const Footer = props => {
     <div {...rest} className={clsx(classes.root, className)} align="center">
       <Typography variant="body1" >
         &copy;{' '}
-        <Link component="a" href="https://elfo.com.co/" target="_blank">
-          Elfo Traffic | For Webcam Models
+        <Link component="a" href="https://latiweb.com/" target="_blank">
+          Latiweb Traffic | For Webcam Models
         </Link>
         . 2020
       </Typography>      

@@ -22,6 +22,7 @@ const Dashboard = () => {
       <Grid
         container
         spacing={2}
+        justify="center"
       >        
         <Grid
           item

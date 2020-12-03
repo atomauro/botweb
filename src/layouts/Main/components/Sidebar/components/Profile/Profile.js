@@ -37,20 +37,13 @@ const Profile = props => {
 
   const classes = useStyles();
 
-  const handlePopoverOpen = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handlePopoverClose = () => {
-    setAnchorEl(null);
-  };
   const open = Boolean(anchorEl);
 
   const user = {
     name: 'Juan Bustos',
     avatar: '/images/avatars/juanbustos.jpeg',
     email: 'juanbustos.com@gmail.com',
-    role: 'Manager'
+    role: 'Monitor'
   };
 
   return (
@@ -66,36 +59,13 @@ const Profile = props => {
         {user.name}
       </Typography>
       <Typography variant="body2">{user.email}</Typography>
-
       <div>
         <Typography
           aria-owns={open ? 'mouse-over-popover' : undefined}
           aria-haspopup="true"
-          onMouseEnter={handlePopoverOpen}
-          onMouseLeave={handlePopoverClose}
           variant="h4"
-          color="secondary">
+          color="primary">
           {user.role}
-          <Popover
-            id="mouse-over-popover"
-            className={classes.popover}
-            classes={{
-              paper: classes.paper
-            }}
-            open={open}
-            anchorEl={anchorEl}
-            anchorOrigin={{
-              vertical: 'center',
-              horizontal: 'right'
-            }}
-            transformOrigin={{
-              vertical: 'center',
-              horizontal: 'left'
-            }}
-            onClose={handlePopoverClose}
-            disableRestoreFocus>
-            <Studio/>
-          </Popover>
         </Typography>
       </div>
     </div>
