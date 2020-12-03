@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
     height: 'auto',
     alignContent: 'center',
     align: 'center'
-  }, 
+  },
   title: {
     marginLeft: 80,
     flex: 1,
@@ -154,7 +154,6 @@ const GeneralProfile = props => {
                   variant="outlined"
                 />
               </Grid>
-              
 
               <Grid item md={6} xs={12}>
                 <TextField
