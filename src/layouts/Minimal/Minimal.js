@@ -2,16 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 
-import { Topbar } from './components';
-
 const useStyles = makeStyles(() => ({
   root: {
-    paddingTop: 0,
-    height: '100%'
+    height: '100%',
+    overflowY: 'hidden'
   },
-  content: {
-    height: '100%'
-  }
+  content: {}
 }));
 
 const Minimal = props => {
@@ -20,7 +16,7 @@ const Minimal = props => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>      
+    <div className={classes.root}>
       <main className={classes.content}>{children}</main>
     </div>
   );
