@@ -17,6 +17,11 @@ import Logo from '../../assets/icons/LogoLogin.png';
 import * as Yup from 'yup';
 import { Formik } from 'formik';
 
+import { AccessTokenContext } from '../../App';
+import { UserNameContext } from '../../App';
+
+import State from './../../store/reducers/State';
+
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -50,7 +55,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function SignIn() {
+const LogIn=()=> {
   const classes = useStyles();
 
   return (
@@ -104,3 +109,5 @@ export default function SignIn() {
     </Container>
   );
 }
+
+export default LogIn
