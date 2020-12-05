@@ -56,7 +56,7 @@ const SuperAdminToolbar = props => {
         <span className={classes.spacer} />
         
           <Button color="primary" variant="contained" startIcon={<AddIcon />}>
-            ADD ADMIN
+            ADD ADMINISTRATOR
           </Button>
         
       </div>

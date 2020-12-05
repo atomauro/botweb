@@ -1,25 +1,40 @@
 import React, { useContext } from 'react';
-import { AccessTokenContext, UserNameContext } from '../../App';
+import { 
+  AccessTokenContext, 
+  UserNameContext,
+  RoleContext 
+} from '../../App';
 import AccessTokenReducer from './AccessToken';
 import UserNameReducer from './UserName';
+import RoleReducer from './Role';
 
 export { AccessTokenReducer };
 export { UserNameReducer };
+export { RoleReducer };
 
 export default ({ state }) => {
   const { accessTokenDispatch, accessTokenState } = useContext(
     AccessTokenContext
   );
-  const { userNameDispatch, userNameState } = useContext(UserNameContext);
+  const { userNameDispatch, userNameState } = useContext(
+    UserNameContext
+  );
+  const { RoleDispatch, RoleState } = useContext(
+    RoleContext
+  );
 
   const STATE= {
-    dashboard2bsafeAccessToken: {
+    AccessToken: {
       state: accessTokenState,
       dispatch: accessTokenDispatch
     },
     userName: {
       state: userNameState,
       dispatch: userNameDispatch
+    },
+    Role: {
+      state: RoleState,
+      dispatch: RoleDispatch
     }
   };
 

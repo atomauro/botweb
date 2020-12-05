@@ -22,6 +22,7 @@ import { Formik } from 'formik';
 
 import { AccessTokenContext } from '../../App';
 import { UserNameContext } from '../../App';
+import { RoleContext } from '../../App';
 import State from './../../store/reducers/State';
 
 import Logo from '../../assets/icons/LogoLogin.png';
@@ -70,6 +71,9 @@ const LogIn=()=> {
   );
   const { userNameDispatch, userNameState } = useContext(
     UserNameContext
+  );
+  const { roleDispatch, roleState } = useContext(
+    RoleContext
   );
   const [alertStatus, setAlertStatus] = useState('invisible');
 
@@ -126,7 +130,8 @@ const LogIn=()=> {
       <State
         state={{
           AccessToken: accessTokenState,
-          userName: userNameState
+          userName: userNameState,
+          Role: roleState,
         }}
       />
       <div className={classes.paper}>
