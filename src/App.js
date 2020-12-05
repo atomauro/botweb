@@ -11,21 +11,44 @@ import Routes from './Routes';
 import 'react-perfect-scrollbar/dist/css/styles.css';
 import './assets/scss/index.scss';
 
-import { Provider } from 'react-redux';
-import store from './store';
+import AccessTokenReducer from './store/reducers/AccessToken';
+import UserNameReducer from './store/reducers/AccessToken';
 
 const browserHistory = createBrowserHistory();
 
-export default class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
+export const AccessTokenContext = React.createContext({});
+export const UserNameContext = React.createContext({});
+
+const App=()=>{
+
+  const [accessToken, tokenDispatch] = React.useReducer(AccessTokenReducer, '');
+  const [userName, userDispatch] = React.useReducer(UserNameReducer, '');
+
+  
+    return (      
         <ThemeProvider theme={theme}>
+          <AccessTokenContext.Provider
+        value={{
+          accessTokenState: accessToken,
+          accessTokenDispatch: tokenDispatch
+        }}
+      >
+        <UserNameContext.Provider
+          value={{ 
+            userNameState: userName, 
+            userNameDispatch: userDispatch 
+          }}
+        >
           <Router history={browserHistory}>
             <Routes />
           </Router>
+          </UserNameContext.Provider>
+         </AccessTokenContext.Provider> 
+
         </ThemeProvider>
-      </Provider>
+      
     );
-  }
+  
 }
+
+export default App;
