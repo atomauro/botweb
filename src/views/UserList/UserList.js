@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/styles';
 
-import { UsersToolbar, UsersTable } from './components';
+import { 
+  SuperAdminToolbar, 
+  SuperAdminTable,
+  AdminToolbar, 
+  AdminTable,
+  MonitorToolbar, 
+  MonitorTable
+ } from './components';
 import mockData from './users';
 
 const useStyles = makeStyles(theme => ({
@@ -20,9 +27,9 @@ const UserList = () => {
 
   return (
     <div className={classes.root}>
-      <UsersToolbar />
+      <SuperAdminToolbar />
       <div className={classes.content}>
-        <UsersTable users={users} />
+        <SuperAdminTable users={users} />
       </div>
     </div>
   );

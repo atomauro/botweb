@@ -9,9 +9,10 @@ import {
   Box ,
   Fade,
   Typography,
+  Backdrop,
   makeStyles ,
   Container,
-  LinearProgress
+  CircularProgress
 } from '@material-ui/core';
 import { useNavigate } from 'react-router-dom';
 import Alert from '@material-ui/lab/Alert';
@@ -43,6 +44,10 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(5),
     fontWeight: 500
   },
+  backdrop: {
+    zIndex: theme.zIndex.drawer + 1,
+    color: '#fff'
+  },
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
@@ -50,7 +55,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center'
   },
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '100%', 
     marginTop: theme.spacing(1)
   },
   submit: {
@@ -131,11 +136,11 @@ const LogIn=()=> {
         </Typography>
         <Formik
                 initialValues={{
-                  email: '',
+                  user: '',
                   password: ''
                 }}
                 validationSchema={Yup.object().shape({
-                  email: Yup.string()
+                  user: Yup.string()
                     .max(255)
                     .required('The user is required'),
                   password: Yup.string()
@@ -167,14 +172,15 @@ const LogIn=()=> {
                         margin="normal"
                         required
                         fullWidth
-                        id="email"
-                        label="Email Address"
-                        name="email"
-                        autoComplete="email"
+                        id="user"
+                        label="User"
+                        name="user"                        
+                        type="text"
+                        placeholder="user"
                         autoFocus
-                        error={Boolean(touched.email && (errors.email))}
-                        helperText={touched.email && (errors.email)}
-                        value={values.email}
+                        error={Boolean(touched.user && (errors.user))}
+                        helperText={touched.user && (errors.user)}
+                        value={values.user}
                         onBlur={handleBlur}
                         onChange={handleChange}
                       />
@@ -187,6 +193,7 @@ const LogIn=()=> {
                         label="Password"
                         type="password"
                         id="password"
+                        placeholder={"Password"}
                         autoComplete="current-password"
                         error={Boolean(touched.password && (errors.password))}
                         helperText={touched.password && (errors.password)}
@@ -194,20 +201,25 @@ const LogIn=()=> {
                         onBlur={handleBlur}
                         onChange={handleChange} 
                       />
-                      <FormControlLabel
-                        control={<Checkbox value="remember" color="primary" />}
-                        label="Remember me"
-                      />
                       <Button
                         type="submit"
                         fullWidth
                         variant="contained"
                         color="primary"
-                        className={classes.submit}>
+                        className={classes.submit}
+                        disabled={isSubmitting}>
                         Sign In
                       </Button>
-                      {isSubmitting ? <LinearProgress style={{marginTop:20, marginBottom:20, width:'100%'}} /> : null}    
                     </form>
+                    <Backdrop
+                        className={classes.backdrop}
+                        open={isSubmitting}
+                        onClick={() => {
+                          console.log('dont close');
+                        }}
+                      >
+                        <CircularProgress color="inherit" />
+                      </Backdrop>
                   </>
                   )}
                   </Formik>

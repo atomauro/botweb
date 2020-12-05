@@ -9,7 +9,6 @@ import { SearchInput } from 'components';
 
 import AddIcon from '@material-ui/icons/PersonAdd';
 import RefreshIcon from '@material-ui/icons/Refresh';
-import AddModel from '../UsersAddDialog/UsersAddDialog';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -37,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersToolbar = props => {
+const SuperAdminToolbar = props => {
   const { className, ...rest } = props;
   const [open, setOpen] = React.useState(false);
 
@@ -55,19 +54,17 @@ const UsersToolbar = props => {
     <div {...rest} className={clsx(classes.root, className)}>
       <div className={classes.row}>
         <span className={classes.spacer} />
-        <Link component={RouterLink} to="/add-model" variant="h6">
+        
           <Button color="primary" variant="contained" startIcon={<AddIcon />}>
-            ADD MODEL
+            ADD ADMIN
           </Button>
-        </Link>
+        
       </div>
-      <Dialog open={open}>
-        <AddModel onClick={handleClose} />
-      </Dialog>
+      
       <div className={classes.row}>
         <SearchInput
           className={classes.searchInput}
-          placeholder="Search model"
+          placeholder="Search Administrator"
         />
         <IconButton color="primary" variant="outlined">
           <RefreshIcon />
@@ -77,8 +74,8 @@ const UsersToolbar = props => {
   );
 };
 
-UsersToolbar.propTypes = {
+SuperAdminToolbar.propTypes = {
   className: PropTypes.string
 };
 
-export default withRouter(UsersToolbar);
+export default withRouter(SuperAdminToolbar);
