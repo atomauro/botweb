@@ -5,8 +5,6 @@ import { Grid, Divider } from '@material-ui/core';
 import {
   AccountProfile,
   AccountDetails,
-  StudioProfile,
-  StudioDetails
 } from './components';
 
 const useStyles = makeStyles(theme => ({
@@ -31,15 +29,7 @@ const Account = () => {
           <AccountDetails />
         </Grid>
       </Grid>
-      <Divider />
-      <Grid container spacing={4} className={classes.studio}>
-        <Grid item lg={4} md={6} xl={4} xs={12}>
-          <StudioProfile />
-        </Grid>
-        <Grid item lg={8} md={6} xl={8} xs={12}>
-          <StudioDetails />
-        </Grid>
-      </Grid>
+      <Divider style={{marginTop:20}}/>      
     </div>
   );
 };
