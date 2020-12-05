@@ -1,7 +1,6 @@
 import React from 'react';
 import _ from 'lodash/core';
 
-import { connect } from 'react-redux';
 
 import api from '../../api';
 
@@ -91,14 +90,5 @@ class index extends React.Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    user: state.user
-  };
-};
 
-const mapDispatchToProps = {
-  //login
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(index);
+export default index;

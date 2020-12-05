@@ -16,8 +16,8 @@ import UserNameReducer from './store/reducers/AccessToken';
 
 const browserHistory = createBrowserHistory();
 
-export const AccessTokenContext = React.createContext({});
-export const UserNameContext = React.createContext({});
+export const AccessTokenContext = React.createContext();
+export const UserNameContext = React.createContext();
 
 const App=()=>{
 

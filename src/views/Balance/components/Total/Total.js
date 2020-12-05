@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux'
+
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
@@ -77,16 +77,8 @@ Total.propTypes = {
   className: PropTypes.string
 };
 
-const mapState = state => ({
-  badge: state.badge,
-});
 
-const mapDispatch = ({ badge: { addBy, addByAsync }}) => ({
-  addByOne: () => addBy(1),
-  addByOneAsync: () => addByAsync(1)
-});
-
-export default connect(mapState, mapDispatch)(Total);
+export default Total;
 
 
 

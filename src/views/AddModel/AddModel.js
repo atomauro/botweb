@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 import PropTypes from 'prop-types';
 
@@ -312,13 +311,5 @@ const AddModel = props => {
     </React.Fragment>
   );
 };
-const mapState = state => ({
-  badge: state.badge
-});
-
-const mapDispatch = ({ badge: { addBy, addByAsync } }) => ({
-  addByOne: () => addBy(1),
-  addByOneAsync: () => addByAsync(1)
-});
 
 export default AddModel;

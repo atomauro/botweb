@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography, Button } from '@material-ui/core';
-import { connect } from 'react-redux';
+
 
 import {
   MagicPackage,
@@ -55,13 +55,4 @@ const Balance = props => {
   );
 };
 
-const mapState = state => ({
-  badge: state.badge
-});
-
-const mapDispatch = ({ badge: { addBy, addByAsync } }) => ({
-  addByOne: () => addBy(1),
-  addByOneAsync: () => addByAsync(1)
-});
-
-export default connect(mapState, mapDispatch)(Balance);
+export default Balance;
