@@ -9,12 +9,8 @@ import {
   Box,
   Fade,
   Typography,
-<<<<<<< HEAD
-  makeStyles,
-=======
   Backdrop,
-  makeStyles ,
->>>>>>> 88eb60bffc697392dd5723f80537bee2588f9cf6
+  makeStyles,
   Container,
   CircularProgress
 } from '@material-ui/core';
@@ -61,7 +57,7 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center'
   },
   form: {
-    width: '100%', 
+    width: '100%',
     marginTop: theme.spacing(1)
   },
   submit: {
@@ -74,16 +70,8 @@ const LogIn = () => {
   const { accessTokenDispatch, accessTokenState } = useContext(
     AccessTokenContext
   );
-<<<<<<< HEAD
   const { userNameDispatch, userNameState } = useContext(UserNameContext);
-=======
-  const { userNameDispatch, userNameState } = useContext(
-    UserNameContext
-  );
-  const { roleDispatch, roleState } = useContext(
-    RoleContext
-  );
->>>>>>> 88eb60bffc697392dd5723f80537bee2588f9cf6
+  const { roleDispatch, roleState } = useContext(RoleContext);
   const [alertStatus, setAlertStatus] = useState('invisible');
 
   const handleAlertStatus = status => {
@@ -140,7 +128,7 @@ const LogIn = () => {
         state={{
           AccessToken: accessTokenState,
           userName: userNameState,
-          Role: roleState,
+          Role: roleState
         }}
       />
       <div className={classes.paper}>
@@ -149,13 +137,12 @@ const LogIn = () => {
           Sign in
         </Typography>
         <Formik
-<<<<<<< HEAD
           initialValues={{
-            email: '',
+            user: '',
             password: ''
           }}
           validationSchema={Yup.object().shape({
-            email: Yup.string()
+            user: Yup.string()
               .max(255)
               .required('The user is required'),
             password: Yup.string()
@@ -184,14 +171,15 @@ const LogIn = () => {
                   margin="normal"
                   required
                   fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
+                  id="user"
+                  label="User"
+                  name="user"
+                  type="text"
+                  placeholder="user"
                   autoFocus
-                  error={Boolean(touched.email && errors.email)}
-                  helperText={touched.email && errors.email}
-                  value={values.email}
+                  error={Boolean(touched.user && errors.user)}
+                  helperText={touched.user && errors.user}
+                  value={values.user}
                   onBlur={handleBlur}
                   onChange={handleChange}
                 />
@@ -204,6 +192,7 @@ const LogIn = () => {
                   label="Password"
                   type="password"
                   id="password"
+                  placeholder={'Password'}
                   autoComplete="current-password"
                   error={Boolean(touched.password && errors.password)}
                   helperText={touched.password && errors.password}
@@ -211,24 +200,24 @@ const LogIn = () => {
                   onBlur={handleBlur}
                   onChange={handleChange}
                 />
-                <FormControlLabel
-                  control={<Checkbox value="remember" color="primary" />}
-                  label="Remember me"
-                />
                 <Button
                   type="submit"
                   fullWidth
                   variant="contained"
                   color="primary"
-                  className={classes.submit}>
+                  className={classes.submit}
+                  disabled={isSubmitting}>
                   Sign In
                 </Button>
-                {isSubmitting ? (
-                  <LinearProgress
-                    style={{ marginTop: 20, marginBottom: 20, width: '100%' }}
-                  />
-                ) : null}
               </form>
+              <Backdrop
+                className={classes.backdrop}
+                open={isSubmitting}
+                onClick={() => {
+                  console.log('dont close');
+                }}>
+                <CircularProgress color="inherit" />
+              </Backdrop>
             </>
           )}
         </Formik>
@@ -249,114 +238,5 @@ const LogIn = () => {
     </Container>
   );
 };
-=======
-                initialValues={{
-                  user: '',
-                  password: ''
-                }}
-                validationSchema={Yup.object().shape({
-                  user: Yup.string()
-                    .max(255)
-                    .required('The user is required'),
-                  password: Yup.string()
-                    .max(255)
-                    .required('The password is required')
-                })}
-                onSubmit={async (form, actions) => {                  
-                  actions.setSubmitting(true);                  
-                  setTimeout(() => {
-                    console.log('starting log in')
-                   
-                    actions.setSubmitting(false); 
-                  }, 1000);                                                  
-                }}
-              >
-                {({
-                  errors,
-                  handleBlur,
-                  handleChange,
-                  handleSubmit,
-                  isSubmitting,
-                  touched,
-                  values
-                }) => (
-                  <>                  
-                    <form className={classes.form} onSubmit={handleSubmit}>
-                      <TextField
-                        variant="outlined"
-                        margin="normal"
-                        required
-                        fullWidth
-                        id="user"
-                        label="User"
-                        name="user"                        
-                        type="text"
-                        placeholder="user"
-                        autoFocus
-                        error={Boolean(touched.user && (errors.user))}
-                        helperText={touched.user && (errors.user)}
-                        value={values.user}
-                        onBlur={handleBlur}
-                        onChange={handleChange}
-                      />
-                      <TextField
-                        variant="outlined"
-                        margin="normal"
-                        required
-                        fullWidth
-                        name="password"
-                        label="Password"
-                        type="password"
-                        id="password"
-                        placeholder={"Password"}
-                        autoComplete="current-password"
-                        error={Boolean(touched.password && (errors.password))}
-                        helperText={touched.password && (errors.password)}
-                        value={values.password}
-                        onBlur={handleBlur}
-                        onChange={handleChange} 
-                      />
-                      <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        color="primary"
-                        className={classes.submit}
-                        disabled={isSubmitting}>
-                        Sign In
-                      </Button>
-                    </form>
-                    <Backdrop
-                        className={classes.backdrop}
-                        open={isSubmitting}
-                        onClick={() => {
-                          console.log('dont close');
-                        }}
-                      >
-                        <CircularProgress color="inherit" />
-                      </Backdrop>
-                  </>
-                  )}
-                  </Formik>
-                </div>
-                <Box mt={5}>
-                  <Copyright />
-                </Box>
-                <Fade
-                  in={!(alertStatus === 'invisible')}
-                  timeout={{ enter: 500, exit: 500 }}
-                >
-                  <Alert
-                    variant="filled"
-                    severity={getTypeAlert()}
-                    style={{ margin: 20, display: 'flex', justifyContent: 'center' }}
-                  >
-                    {getMessageAlert()}
-                  </Alert>
-                </Fade>
-              </Container>
-            );
-}
->>>>>>> 88eb60bffc697392dd5723f80537bee2588f9cf6
 
 export default LogIn;
