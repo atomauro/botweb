@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersTable = props => {
+const SuperAdminTable = props => {
   const { className, users, ...rest } = props;
 
   const classes = useStyles();
@@ -102,23 +102,11 @@ const UsersTable = props => {
           <div className={classes.inner}>
             <Table>
               <TableHead>
-                <TableRow>
-                  <TableCell padding="checkbox">
-                    <Checkbox
-                      checked={selectedUsers.length === users.length}
-                      color="primary"
-                      indeterminate={
-                        selectedUsers.length > 0 &&
-                        selectedUsers.length < users.length
-                      }
-                      onChange={handleSelectAll}
-                    />
-                  </TableCell>
+                <TableRow>                 
                   <TableCell>Name</TableCell>
+                  <TableCell>Headquarter</TableCell>
                   <TableCell>Email</TableCell>
-                  <TableCell>Location</TableCell>
-                  <TableCell>Phone</TableCell>
-                  <TableCell>Registration date</TableCell>
+                  <TableCell>Phone</TableCell>                  
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -128,15 +116,7 @@ const UsersTable = props => {
                     hover
                     key={user.id}
                     selected={selectedUsers.indexOf(user.id) !== -1}
-                  >
-                    <TableCell padding="checkbox">
-                      <Checkbox
-                        checked={selectedUsers.indexOf(user.id) !== -1}
-                        color="primary"
-                        onChange={event => handleSelectOne(event, user.id)}
-                        value="true"
-                      />
-                    </TableCell>
+                  >                    
                     <TableCell>
                       <div className={classes.nameContainer}>
                         <Avatar
@@ -148,14 +128,13 @@ const UsersTable = props => {
                         <Typography variant="body1">{user.name}</Typography>
                       </div>
                     </TableCell>
-                    <TableCell>{user.email}</TableCell>
                     <TableCell>
                       {user.address.city}, {user.address.state},{' '}
                       {user.address.country}
                     </TableCell>
-                    <TableCell>{user.phone}</TableCell>
+                    <TableCell>{user.email}</TableCell>
                     <TableCell>
-                      {moment(user.createdAt).format('DD/MM/YYYY')}
+                      {user.phone}
                     </TableCell>
                   </TableRow>
                 ))}
@@ -179,9 +158,9 @@ const UsersTable = props => {
   );
 };
 
-UsersTable.propTypes = {
+SuperAdminTable.propTypes = {
   className: PropTypes.string,
   users: PropTypes.array.isRequired
 };
 
-export default UsersTable;
+export default SuperAdminTable;

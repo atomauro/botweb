@@ -9,7 +9,6 @@ import { SearchInput } from 'components';
 
 import AddIcon from '@material-ui/icons/PersonAdd';
 import RefreshIcon from '@material-ui/icons/Refresh';
-import AddModel from '../UsersAddDialog/UsersAddDialog';
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -37,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersToolbar = props => {
+const MonitorToolbar = props => {
   const { className, ...rest } = props;
   const [open, setOpen] = React.useState(false);
 
@@ -61,9 +60,6 @@ const UsersToolbar = props => {
           </Button>
         </Link>
       </div>
-      <Dialog open={open}>
-        <AddModel onClick={handleClose} />
-      </Dialog>
       <div className={classes.row}>
         <SearchInput
           className={classes.searchInput}
@@ -77,8 +73,8 @@ const UsersToolbar = props => {
   );
 };
 
-UsersToolbar.propTypes = {
+MonitorToolbar.propTypes = {
   className: PropTypes.string
 };
 
-export default withRouter(UsersToolbar);
+export default withRouter(MonitorToolbar);

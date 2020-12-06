@@ -43,7 +43,7 @@ const Profile = props => {
     name: 'Juan Bustos',
     avatar: '/images/avatars/juanbustos.jpeg',
     email: 'juanbustos.com@gmail.com',
-    role: 'Monitor'
+    role: 'Super Administrator'
   };
 
   return (

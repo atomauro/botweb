@@ -13,17 +13,19 @@ import './assets/scss/index.scss';
 
 import AccessTokenReducer from './store/reducers/AccessToken';
 import UserNameReducer from './store/reducers/AccessToken';
+import RoleReducer from './store/reducers/Role';
 
 const browserHistory = createBrowserHistory();
 
 export const AccessTokenContext = React.createContext();
 export const UserNameContext = React.createContext();
+export const RoleContext = React.createContext();
 
 const App=()=>{
 
   const [accessToken, tokenDispatch] = React.useReducer(AccessTokenReducer, '');
   const [userName, userDispatch] = React.useReducer(UserNameReducer, '');
-
+  const [role, roleDispatch] = React.useReducer(RoleReducer, '');
   
     return (      
         <ThemeProvider theme={theme}>
@@ -39,9 +41,16 @@ const App=()=>{
             userNameDispatch: userDispatch 
           }}
         >
-          <Router history={browserHistory}>
-            <Routes />
-          </Router>
+         <RoleContext.Provider
+          value={{ 
+            RoleState: role, 
+            RoleDispatch: roleDispatch 
+          }}
+        >          
+            <Router history={browserHistory}>
+              <Routes />
+            </Router>
+            </RoleContext.Provider>   
           </UserNameContext.Provider>
          </AccessTokenContext.Provider> 
 
