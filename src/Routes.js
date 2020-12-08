@@ -20,7 +20,8 @@ import {
   SignIn as SignInView,
   NotFound as NotFoundView,
   Statistics as StatisticsView,
-  AddModel as AddModelView
+  AddModel as AddModelView,
+  AddAdmin as AddAdminView
 } from './views';
 
 import LoginView from './views/LogIn/index';
@@ -94,6 +95,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/add-model"
+      />
+      <RouteWithLayout
+        component={AddAdminView}
+        exact
+        layout={MainLayout}
+        path="/add-admin"
       />
       <RouteWithLayout
         component={SignUpView}

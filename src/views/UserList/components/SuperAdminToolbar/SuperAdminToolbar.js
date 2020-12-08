@@ -54,13 +54,17 @@ const SuperAdminToolbar = props => {
     <div {...rest} className={clsx(classes.root, className)}>
       <div className={classes.row}>
         <span className={classes.spacer} />
-        
+        <Link component={RouterLink} to="/add-admin" variant="h6">
           <Button color="primary" variant="contained" startIcon={<AddIcon />}>
             ADD ADMINISTRATOR
           </Button>
-        
+        </Link>
+
+        {/* <Button color="primary" variant="contained" startIcon={<AddIcon />}>
+          ADD ADMINISTRATOR
+        </Button> */}
       </div>
-      
+
       <div className={classes.row}>
         <SearchInput
           className={classes.searchInput}

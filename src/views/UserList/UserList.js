@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/styles';
+import { adminApi } from '../../API/index';
 
-import { 
-  SuperAdminToolbar, 
+import {
+  SuperAdminToolbar,
   SuperAdminTable,
-  AdminToolbar, 
+  AdminToolbar,
   AdminTable,
-  MonitorToolbar, 
+  MonitorToolbar,
   MonitorTable
- } from './components';
+} from './components';
 import mockData from './users';
 
 const useStyles = makeStyles(theme => ({
@@ -21,6 +22,18 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const UserList = () => {
+  const [state, setState] = useState({
+    list: []
+  });
+
+  useEffect(async () => {
+    const data = await adminApi.getAdmin();
+    setState({
+      ...state,
+      list: data
+    });
+  }, []);
+
   const classes = useStyles();
 
   const [users] = useState(mockData);

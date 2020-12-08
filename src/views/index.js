@@ -4,6 +4,7 @@ export { default as Icons } from './Icons';
 export { default as Packages } from './Packages';
 export { default as UserList } from './UserList';
 export { default as AddModel } from './AddModel';
+export { default as AddAdmin } from './AddAdmin';
 export { default as Boost } from './Boost';
 export { default as NewBoost } from './NewBoost';
 export { default as SignIn } from './SignIn';
@@ -14,4 +15,3 @@ export { default as Settings } from './Settings';
 export { default as Typography } from './Typography';
 export { default as Statistics } from './Statistics';
 export { default as NotFound } from './NotFound';
-

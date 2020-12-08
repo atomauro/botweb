@@ -84,5 +84,5 @@ export default [
     phone: '858-602-3409',
     avatarUrl: '/images/avatars/default.jpeg',
     createdAt: 1554670800000
-  },  
+  }
 ];

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import moment from 'moment';
@@ -9,7 +9,6 @@ import {
   CardActions,
   CardContent,
   Avatar,
-  Checkbox,
   Table,
   TableBody,
   TableCell,
@@ -93,20 +92,17 @@ const SuperAdminTable = props => {
   };
 
   return (
-    <Card
-      {...rest}
-      className={clsx(classes.root, className)}
-    >
+    <Card {...rest} className={clsx(classes.root, className)}>
       <CardContent className={classes.content}>
         <PerfectScrollbar>
           <div className={classes.inner}>
             <Table>
               <TableHead>
-                <TableRow>                 
+                <TableRow>
                   <TableCell>Name</TableCell>
-                  <TableCell>Headquarter</TableCell>
+                  <TableCell>Username</TableCell>
                   <TableCell>Email</TableCell>
-                  <TableCell>Phone</TableCell>                  
+                  <TableCell>Phone</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -115,14 +111,10 @@ const SuperAdminTable = props => {
                     className={classes.tableRow}
                     hover
                     key={user.id}
-                    selected={selectedUsers.indexOf(user.id) !== -1}
-                  >                    
+                    selected={selectedUsers.indexOf(user.id) !== -1}>
                     <TableCell>
                       <div className={classes.nameContainer}>
-                        <Avatar
-                          className={classes.avatar}
-                          src={user.avatarUrl}
-                        >
+                        <Avatar className={classes.avatar} src={user.avatarUrl}>
                           {getInitials(user.name)}
                         </Avatar>
                         <Typography variant="body1">{user.name}</Typography>
@@ -133,9 +125,7 @@ const SuperAdminTable = props => {
                       {user.address.country}
                     </TableCell>
                     <TableCell>{user.email}</TableCell>
-                    <TableCell>
-                      {user.phone}
-                    </TableCell>
+                    <TableCell>{user.phone}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>

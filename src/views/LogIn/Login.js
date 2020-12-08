@@ -26,7 +26,7 @@ import { RoleContext } from '../../App';
 import State from './../../store/reducers/State';
 
 import Logo from '../../assets/icons/LogoLogin.png';
-import API from '../../API/index';
+import { loginApi } from '../../API/index';
 
 function Copyright() {
   return (
@@ -151,7 +151,7 @@ const LogIn = () => {
           })}
           onSubmit={async (form, actions) => {
             actions.setSubmitting(true);
-            const result = await API.getUser();
+            const result = await loginApi.loginUser();
             // accessTokenState = result.AccessToken;
             // userNameState = result.userName;
           }}>
