@@ -13,6 +13,7 @@ import Container from '@material-ui/core/Container';
 
 import * as yup from 'yup';
 import { Formik } from 'formik';
+import { adminApi } from '../../../API/index';
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -49,7 +50,7 @@ const FormAdminCreate = () => {
             username: '',
             email: '',
             password: '',
-            createAt: ''
+            createdAt: ''
           }}
           schema={yup.object().shape({
             name: yup
@@ -76,7 +77,14 @@ const FormAdminCreate = () => {
             createdOn: yup.date().default(function() {
               return new Date();
             })
-          })}>
+          })}
+          onSubmit={async (form, actions) => {
+            actions.setSubmitting(true);
+            const result = await adminApi.createAdmin();
+            console.log(form);
+            // accessTokenState = result.AccessToken;
+            // userNameState = result.userName;
+          }}>
           {({
             errors,
             handleBlur,
